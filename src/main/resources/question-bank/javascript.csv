@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is JavaScript?
+EASY,Why is JavaScript used?
+EASY,What is the difference between JavaScript and Java?
+EASY,Where can JavaScript run?
+EASY,What is ECMAScript?
+EASY,What is a variable in JavaScript?
+EASY,What is the difference between let const and var?
+EASY,What are the primitive data types in JavaScript?
+EASY,What is a string?
+EASY,What is a number in JavaScript?
+EASY,What is a boolean?
+EASY,What is undefined?
+EASY,What is null?
+EASY,What is an object?
+EASY,What is an array?
+EASY,What is a function?
+EASY,What is an arrow function?
+EASY,What is a parameter?
+EASY,What is an argument?
+EASY,What is a return statement?
+EASY,What is scope?
+EASY,What is global scope?
+EASY,What is local scope?
+EASY,What is block scope?
+EASY,What is an if statement?
+EASY,What is a switch statement?
+EASY,What is a for loop?
+EASY,What is a while loop?
+EASY,What is a for...of loop?
+EASY,What is a for...in loop?
+EASY,What is the difference between == and ===?
+EASY,What is type coercion?
+EASY,What is NaN?
+EASY,What is a template literal?
+EASY,What is string interpolation?
+EASY,What is the spread operator?
+EASY,What is the rest operator?
+EASY,What is destructuring?
+EASY,What is array destructuring?
+EASY,What is object destructuring?
+EASY,What is the DOM?
+EASY,What is an event in JavaScript?
+EASY,What is event handling?
+EASY,What is addEventListener?
+EASY,What is JSON?
+EASY,What is JSON.stringify?
+EASY,What is JSON.parse?
+EASY,What is a Promise?
+EASY,What is async and await?
+EASY,What is the Fetch API?
+MEDIUM,Explain the difference between var let and const.
+MEDIUM,Why is let generally preferred over var?
+MEDIUM,Explain function scope versus block scope.
+MEDIUM,What is hoisting in JavaScript?
+MEDIUM,How does hoisting behave differently for var let and const?
+MEDIUM,What is the temporal dead zone?
+MEDIUM,What is lexical scope?
+MEDIUM,What is a closure?
+MEDIUM,Why are closures useful?
+MEDIUM,What is a higher-order function?
+MEDIUM,What is a callback function?
+MEDIUM,What is a pure function?
+MEDIUM,What is an impure function?
+MEDIUM,What is the difference between function declaration and function expression?
+MEDIUM,What is the difference between arrow functions and regular functions?
+MEDIUM,How does this behave inside an arrow function?
+MEDIUM,What does this refer to in a regular function?
+MEDIUM,What are call apply and bind?
+MEDIUM,What is the prototype chain?
+MEDIUM,What is prototypal inheritance?
+MEDIUM,What is a constructor function?
+MEDIUM,What is a class in JavaScript?
+MEDIUM,How does inheritance work with JavaScript classes?
+MEDIUM,What are getters and setters?
+MEDIUM,What is object destructuring?
+MEDIUM,What is array destructuring?
+MEDIUM,How does the spread operator work with arrays?
+MEDIUM,How does the spread operator work with objects?
+MEDIUM,How does the rest parameter work?
+MEDIUM,What is shallow copying?
+MEDIUM,What is deep copying?
+MEDIUM,What is the difference between map filter and reduce?
+MEDIUM,When would you use find instead of filter?
+MEDIUM,What is some in an array?
+MEDIUM,What is every in an array?
+MEDIUM,What is forEach?
+MEDIUM,What is the difference between map and forEach?
+MEDIUM,What is optional chaining?
+MEDIUM,What is the nullish coalescing operator?
+MEDIUM,What is short-circuit evaluation?
+MEDIUM,What is a Promise state?
+MEDIUM,What are then catch and finally?
+MEDIUM,What is Promise.all?
+MEDIUM,What is Promise.allSettled?
+MEDIUM,What is Promise.race?
+MEDIUM,What is Promise.any?
+MEDIUM,What is the JavaScript event loop?
+MEDIUM,What is the call stack?
+MEDIUM,What is the callback queue?
+MEDIUM,What is event delegation?
+HARD,Explain the JavaScript execution context in detail.
+HARD,What is the global execution context?
+HARD,What is a function execution context?
+HARD,What is the execution context creation phase?
+HARD,What is the execution context execution phase?
+HARD,Explain the complete lifecycle of a JavaScript function call.
+HARD,Explain lexical environment and environment records.
+HARD,Explain closures with a practical example.
+HARD,How can closures cause memory to remain allocated?
+HARD,How would you use a closure to create private variables?
+HARD,Explain hoisting for variables functions and classes.
+HARD,Explain the temporal dead zone with let and const.
+HARD,Explain this binding in JavaScript in different calling contexts.
+HARD,Compare call apply and bind with practical use cases.
+HARD,Explain the prototype chain in detail.
+HARD,How does JavaScript achieve inheritance through prototypes?
+HARD,What happens when you access a property that does not exist directly on an object?
+HARD,Explain JavaScript classes internally in terms of prototypes.
+HARD,How would you implement inheritance without using class syntax?
+HARD,Explain shallow copy versus deep copy with nested objects.
+HARD,How would you deep-clone an object safely?
+HARD,What problems can occur when using JSON.stringify for deep cloning?
+HARD,Explain immutability and why it matters in React applications.
+HARD,How would you update deeply nested JavaScript state without mutating it?
+HARD,Explain the event loop with call stack microtasks and macrotasks.
+HARD,What is the execution order of synchronous code Promise callbacks and timers?
+HARD,Why do Promise callbacks execute before setTimeout callbacks?
+HARD,What happens when a long-running synchronous function blocks the event loop?
+HARD,How can you prevent CPU-heavy JavaScript code from blocking the main thread?
+HARD,What are Web Workers and when would you use them?
+HARD,Explain asynchronous JavaScript from callback-based code to Promises and async/await.
+HARD,How does async/await work internally with Promises?
+HARD,How should errors be handled in async/await code?
+HARD,What happens when an async function throws an error?
+HARD,How would you run multiple independent asynchronous operations efficiently?
+HARD,When should you use Promise.all versus Promise.allSettled?
+HARD,How would you cancel an ongoing Fetch request?
+HARD,What is AbortController?
+HARD,How would you implement retry logic for failed API requests?
+HARD,How would you prevent duplicate API requests from a frontend?
+HARD,How would you debounce a search input in JavaScript?
+HARD,How would you throttle a frequently triggered event?
+HARD,Explain debouncing versus throttling with practical examples.
+HARD,How would you implement event delegation for a large dynamic list?
+HARD,How would you optimize JavaScript code that processes thousands of records?
+HARD,What causes memory leaks in JavaScript applications?
+HARD,How can event listeners cause memory leaks?
+HARD,How would you debug a JavaScript memory leak?
+HARD,Explain garbage collection in JavaScript.
+HARD,What are WeakMap and WeakSet and when are they useful?

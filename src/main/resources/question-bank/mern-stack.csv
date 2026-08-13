@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What does MERN stand for?
+EASY,What is MongoDB?
+EASY,What is Express.js?
+EASY,What is React?
+EASY,What is Node.js?
+EASY,Why is MERN called a full-stack JavaScript technology stack?
+EASY,What is the role of MongoDB in MERN?
+EASY,What is the role of Express.js in MERN?
+EASY,What is the role of React in MERN?
+EASY,What is the role of Node.js in MERN?
+EASY,What is npm?
+EASY,What is package.json?
+EASY,What is node_modules?
+EASY,What is an npm package?
+EASY,What is an Express server?
+EASY,What is middleware in Express?
+EASY,What is an Express route?
+EASY,What is req in Express?
+EASY,What is res in Express?
+EASY,What is res.json()?
+EASY,What is REST API?
+EASY,What is MongoDB collection?
+EASY,What is a MongoDB document?
+EASY,What is BSON?
+EASY,What is a MongoDB database?
+EASY,What is MongoDB Atlas?
+EASY,What is Mongoose?
+EASY,What is a Mongoose schema?
+EASY,What is a Mongoose model?
+EASY,What is React component?
+EASY,What is JSX?
+EASY,What are React props?
+EASY,What is React state?
+EASY,What is useState?
+EASY,What is useEffect?
+EASY,What is an event handler in React?
+EASY,What is conditional rendering in React?
+EASY,What is rendering a list in React?
+EASY,Why does React need keys when rendering lists?
+EASY,What is a React form?
+EASY,What is controlled component?
+EASY,What is React Router?
+EASY,What is a React hook?
+EASY,What is Axios?
+EASY,What is fetch()?
+EASY,What is CORS in a MERN application?
+EASY,What is environment variable?
+EASY,What is dotenv?
+EASY,What is JSON used for in MERN?
+EASY,How does React communicate with an Express backend?
+MEDIUM,Explain the complete request flow in a MERN application.
+MEDIUM,How does React communicate with an Express API?
+MEDIUM,How does Express communicate with MongoDB?
+MEDIUM,What is the difference between Node.js and Express.js?
+MEDIUM,Why is Node.js useful for backend development?
+MEDIUM,What is the Node.js event loop?
+MEDIUM,What is non-blocking I/O in Node.js?
+MEDIUM,What is the difference between synchronous and asynchronous Node.js code?
+MEDIUM,What is a Promise in JavaScript?
+MEDIUM,What is async and await?
+MEDIUM,How do you handle errors in asynchronous Express code?
+MEDIUM,What is Express error-handling middleware?
+MEDIUM,What is the difference between app.use() and app.get()?
+MEDIUM,What is Express Router?
+MEDIUM,Why should routes be separated into different files?
+MEDIUM,What is MVC architecture in an Express application?
+MEDIUM,What is the purpose of a controller in Express?
+MEDIUM,What is the purpose of a service layer in a backend application?
+MEDIUM,How do you validate request data in Express?
+MEDIUM,What is HTTP status code 201 used for?
+MEDIUM,What is the difference between 401 and 403?
+MEDIUM,How do you implement centralized error handling in Express?
+MEDIUM,What is middleware ordering in Express?
+MEDIUM,What is MongoDB's document-oriented data model?
+MEDIUM,What is the difference between MongoDB and a relational database?
+MEDIUM,What is an ObjectId in MongoDB?
+MEDIUM,How do you perform CRUD operations in MongoDB?
+MEDIUM,What is the difference between findOne() and findById() in Mongoose?
+MEDIUM,What is the difference between updateOne() and findOneAndUpdate()?
+MEDIUM,What is Mongoose validation?
+MEDIUM,What is a Mongoose virtual?
+MEDIUM,What are Mongoose middleware hooks?
+MEDIUM,What is populate() in Mongoose?
+MEDIUM,How can MongoDB documents reference other documents?
+MEDIUM,What is a MongoDB index?
+MEDIUM,Why are indexes important in MongoDB?
+MEDIUM,What is an aggregation pipeline in MongoDB?
+MEDIUM,What is React component state?
+MEDIUM,What is lifting state up in React?
+MEDIUM,What is prop drilling?
+MEDIUM,What is React Context?
+MEDIUM,When should React Context be used?
+MEDIUM,What is useReducer?
+MEDIUM,What is useMemo?
+MEDIUM,What is useCallback?
+MEDIUM,What is the difference between useMemo and useCallback?
+MEDIUM,What is a custom React hook?
+MEDIUM,What is a controlled form in React?
+MEDIUM,How do you handle API loading and error states in React?
+MEDIUM,How does React Router handle dynamic routes?
+HARD,Design the architecture of a production-ready MERN application.
+HARD,Explain the complete lifecycle of a user request from React to MongoDB and back.
+HARD,How would you structure a large MERN project for maintainability?
+HARD,How would you separate controllers services repositories and routes in Express?
+HARD,How would you design a scalable Express backend?
+HARD,How would you handle centralized error handling in a large Express application?
+HARD,How would you design validation for all incoming API requests?
+HARD,How would you prevent sensitive information from being exposed in Express error responses?
+HARD,How would you implement authentication in a MERN application?
+HARD,Explain JWT authentication in a MERN application from login to protected API access.
+HARD,Where should access tokens and refresh tokens be stored in a browser-based MERN application?
+HARD,How would you securely implement refresh-token rotation?
+HARD,How would you revoke refresh tokens?
+HARD,How would you implement role-based authorization in Express?
+HARD,Why must authorization always be enforced on the backend even when React routes are protected?
+HARD,How would you protect a MERN application against brute-force attacks?
+HARD,How would you implement rate limiting in Express?
+HARD,How would you protect an Express application from NoSQL injection?
+HARD,How would you protect a MERN application against XSS?
+HARD,How would you protect a MERN application against CSRF?
+HARD,How does CORS work between a React frontend and Express backend?
+HARD,What is a CORS preflight request?
+HARD,How would you configure CORS securely in production?
+HARD,How would you manage environment variables across development testing and production?
+HARD,How should database credentials and JWT secrets be stored securely?
+HARD,How would you design MongoDB collections for a high-traffic application?
+HARD,How would you decide between embedding and referencing documents in MongoDB?
+HARD,How would you optimize a slow MongoDB query?
+HARD,How would you decide which MongoDB fields should have indexes?
+HARD,What are the disadvantages of having too many MongoDB indexes?
+HARD,How would you analyze a MongoDB aggregation pipeline that is running slowly?
+HARD,How would you handle millions of MongoDB documents efficiently?
+HARD,What is MongoDB pagination and how would you implement cursor-based pagination?
+HARD,What is the difference between offset and cursor pagination in MongoDB?
+HARD,How would you handle concurrent updates to the same MongoDB document?
+HARD,What are MongoDB transactions and when should they be used?
+HARD,How would you design MongoDB indexes for a frequently used API query?
+HARD,How would you implement caching in a MERN application?
+HARD,Where would Redis fit into a MERN architecture?
+HARD,How would you prevent duplicate API requests from creating duplicate records?
+HARD,How would you handle a MongoDB outage without crashing the entire backend?
+HARD,How would you handle failures when the React frontend depends on an unavailable API?
+HARD,How would you optimize a React application with unnecessary re-renders?
+HARD,How would you identify and fix React performance problems?
+HARD,Explain React reconciliation and why keys matter for performance and correctness.
+HARD,How would you optimize a React application containing thousands of list items?
+HARD,What is code splitting in React and how does lazy loading help?
+HARD,How would you design global state management for a large React application?
+HARD,How would you choose between Context API Redux and local component state?
+HARD,How would you monitor debug and deploy a production MERN application?

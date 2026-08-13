@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is SQL?
+EASY,What is a database?
+EASY,What is a relational database?
+EASY,What is a table?
+EASY,What is a row?
+EASY,What is a column?
+EASY,What is a primary key?
+EASY,What is a foreign key?
+EASY,What is a candidate key?
+EASY,What is a composite key?
+EASY,What is a unique key?
+EASY,What is a constraint?
+EASY,What is NOT NULL constraint?
+EASY,What is DEFAULT constraint?
+EASY,What is CHECK constraint?
+EASY,What is the SELECT statement?
+EASY,What is the WHERE clause?
+EASY,What is the ORDER BY clause?
+EASY,What is GROUP BY?
+EASY,What is HAVING?
+EASY,What is DISTINCT?
+EASY,What is an alias in SQL?
+EASY,What is the INSERT statement?
+EASY,What is the UPDATE statement?
+EASY,What is the DELETE statement?
+EASY,What is the difference between DELETE and DROP?
+EASY,What is the difference between DELETE and TRUNCATE?
+EASY,What is the difference between DROP and TRUNCATE?
+EASY,What is a JOIN?
+EASY,What is an INNER JOIN?
+EASY,What is a LEFT JOIN?
+EASY,What is a RIGHT JOIN?
+EASY,What is a FULL OUTER JOIN?
+EASY,What is a SELF JOIN?
+EASY,What is a CROSS JOIN?
+EASY,What is a subquery?
+EASY,What is an aggregate function?
+EASY,What is COUNT()?
+EASY,What is SUM()?
+EASY,What is AVG()?
+EASY,What is MIN()?
+EASY,What is MAX()?
+EASY,What is NULL in SQL?
+EASY,What is the difference between NULL and zero?
+EASY,What is the IS NULL condition?
+EASY,What is the LIKE operator?
+EASY,What is the IN operator?
+EASY,What is the BETWEEN operator?
+EASY,What is the CASE expression?
+EASY,What is UNION?
+MEDIUM,What is the difference between UNION and UNION ALL?
+MEDIUM,What is the difference between WHERE and HAVING?
+MEDIUM,What is the difference between WHERE and ON in a JOIN?
+MEDIUM,What is the difference between INNER JOIN and LEFT JOIN?
+MEDIUM,How does a LEFT JOIN work?
+MEDIUM,How do you find rows that exist in one table but not another?
+MEDIUM,What is a correlated subquery?
+MEDIUM,What is the difference between a subquery and a correlated subquery?
+MEDIUM,What is a Common Table Expression?
+MEDIUM,What is a CTE?
+MEDIUM,What is a recursive CTE?
+MEDIUM,What is a window function?
+MEDIUM,What is the difference between GROUP BY and window functions?
+MEDIUM,What is ROW_NUMBER()?
+MEDIUM,What is RANK()?
+MEDIUM,What is DENSE_RANK()?
+MEDIUM,What is the difference between RANK() and DENSE_RANK()?
+MEDIUM,What is PARTITION BY?
+MEDIUM,How do you find the second highest salary using SQL?
+MEDIUM,How do you find the nth highest salary?
+MEDIUM,How do you find duplicate records?
+MEDIUM,How do you remove duplicate rows?
+MEDIUM,How do you find employees whose salary is greater than the average salary?
+MEDIUM,How do you find the highest salary in each department?
+MEDIUM,How do you find the second highest salary in each department?
+MEDIUM,How do you count employees in each department?
+MEDIUM,How do you find departments having more than five employees?
+MEDIUM,How do you find records with NULL values?
+MEDIUM,How does COALESCE() work?
+MEDIUM,What is NULLIF()?
+MEDIUM,What is the difference between COUNT(*) and COUNT(column)?
+MEDIUM,What is the difference between COUNT(column) and COUNT(DISTINCT column)?
+MEDIUM,What is a scalar function?
+MEDIUM,What is a stored procedure?
+MEDIUM,What is a function in SQL?
+MEDIUM,What is a trigger?
+MEDIUM,What is a view?
+MEDIUM,What is the difference between a view and a table?
+MEDIUM,What is an index?
+MEDIUM,Why are indexes used?
+MEDIUM,What is a clustered index?
+MEDIUM,What is a non-clustered index?
+MEDIUM,What is a composite index?
+MEDIUM,What is a unique index?
+MEDIUM,What is a covering index?
+MEDIUM,What is an execution plan?
+MEDIUM,What is query optimization?
+MEDIUM,What is a transaction?
+MEDIUM,What are ACID properties?
+MEDIUM,What is COMMIT?
+HARD,Explain the logical execution order of a SQL query.
+HARD,Why can a SELECT alias usually not be used in the WHERE clause?
+HARD,How does SQL determine the order of rows returned by a query?
+HARD,Explain how SQL handles NULL values during comparisons.
+HARD,Why does NULL = NULL not evaluate to TRUE?
+HARD,Explain three-valued logic in SQL.
+HARD,What is the difference between NOT IN and NOT EXISTS when NULL values are present?
+HARD,Explain the difference between EXISTS and IN.
+HARD,When is EXISTS generally preferable to IN?
+HARD,How can an incorrect JOIN condition produce duplicate rows?
+HARD,How would you identify and fix duplicate rows caused by a JOIN?
+HARD,Explain the difference between INNER JOIN filtering and LEFT JOIN filtering.
+HARD,Why can putting a condition on a LEFT JOIN table in WHERE accidentally turn it into an INNER JOIN?
+HARD,How would you find the top three salaries in every department?
+HARD,How would you find employees earning more than their department average?
+HARD,How would you find the highest-paid employee in each department including ties?
+HARD,How would you find the second highest distinct salary without using LIMIT?
+HARD,How would you find consecutive duplicate records in a table?
+HARD,How would you find gaps in sequential IDs?
+HARD,How would you find missing dates in a date range?
+HARD,How would you calculate a running total using a window function?
+HARD,How would you calculate a moving average using SQL?
+HARD,How would you calculate each employee's percentage of the department salary total?
+HARD,How would you find the first and last record for each group?
+HARD,How would you find the latest record for every customer?
+HARD,How would you remove duplicates while keeping the newest record?
+HARD,How would you solve a top-N-per-group problem using ROW_NUMBER()?
+HARD,How would you solve a top-N-per-group problem using RANK()?
+HARD,Explain the difference between ROW_NUMBER RANK and DENSE_RANK in a real interview problem.
+HARD,What is a recursive CTE and when would you use one?
+HARD,How would you query an employee-manager hierarchy using a recursive CTE?
+HARD,What is a materialized view and how does it differ from a normal view?
+HARD,What are the advantages and disadvantages of database views?
+HARD,Can a view be updated?
+HARD,How do indexes affect INSERT UPDATE and DELETE performance?
+HARD,How does a database optimizer choose whether to use an index?
+HARD,Why might a database ignore an index?
+HARD,Why can an index on a low-cardinality column be ineffective?
+HARD,What is index selectivity?
+HARD,What is a composite index and how does column order affect it?
+HARD,What is the leftmost-prefix principle for composite indexes?
+HARD,How would you optimize a slow SQL query in production?
+HARD,How would you read and analyze an execution plan?
+HARD,What is a full table scan and when can it be acceptable?
+HARD,What is a covering index and why can it improve query performance?
+HARD,What is a transaction isolation level?
+HARD,What are dirty reads non-repeatable reads and phantom reads?
+HARD,Explain READ COMMITTED REPEATABLE READ and SERIALIZABLE.
+HARD,What is a deadlock in a database?
+HARD,How can SQL transactions cause deadlocks?

@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is a computer network?
+EASY,Why are computer networks used?
+EASY,What is a node in a network?
+EASY,What is a network protocol?
+EASY,What is an IP address?
+EASY,What is a MAC address?
+EASY,What is IPv4?
+EASY,What is IPv6?
+EASY,What is a port number?
+EASY,What is a packet?
+EASY,What is packet switching?
+EASY,What is circuit switching?
+EASY,What is LAN?
+EASY,What is MAN?
+EASY,What is WAN?
+EASY,What is the Internet?
+EASY,What is an intranet?
+EASY,What is a router?
+EASY,What is a switch?
+EASY,What is a hub?
+EASY,What is a modem?
+EASY,What is a network interface card?
+EASY,What is DNS?
+EASY,What is DHCP?
+EASY,What is HTTP?
+EASY,What is HTTPS?
+EASY,What is FTP?
+EASY,What is SMTP?
+EASY,What is TCP?
+EASY,What is UDP?
+EASY,What is the OSI model?
+EASY,How many layers are in the OSI model?
+EASY,What is the physical layer?
+EASY,What is the data link layer?
+EASY,What is the network layer?
+EASY,What is the transport layer?
+EASY,What is the session layer?
+EASY,What is the presentation layer?
+EASY,What is the application layer?
+EASY,What is the TCP/IP model?
+EASY,What is a subnet mask?
+EASY,What is a default gateway?
+EASY,What is NAT?
+EASY,What is a firewall?
+EASY,What is a proxy server?
+EASY,What is bandwidth?
+EASY,What is latency?
+EASY,What is throughput?
+EASY,What is network topology?
+EASY,What is a client-server network?
+MEDIUM,Explain the difference between TCP and UDP.
+MEDIUM,Why is TCP considered connection-oriented?
+MEDIUM,Why is UDP considered connectionless?
+MEDIUM,What is the TCP three-way handshake?
+MEDIUM,Why does TCP use a three-way handshake?
+MEDIUM,What happens during TCP connection termination?
+MEDIUM,What is a TCP segment?
+MEDIUM,What is a UDP datagram?
+MEDIUM,What are TCP sequence numbers?
+MEDIUM,What are TCP acknowledgment numbers?
+MEDIUM,What is TCP flow control?
+MEDIUM,What is TCP congestion control?
+MEDIUM,What is the TCP sliding-window mechanism?
+MEDIUM,What is retransmission in TCP?
+MEDIUM,What is packet loss?
+MEDIUM,What is a timeout in TCP?
+MEDIUM,What is DNS resolution?
+MEDIUM,What happens when you type a website address into a browser?
+MEDIUM,What is a DNS record?
+MEDIUM,What is an A record?
+MEDIUM,What is a CNAME record?
+MEDIUM,What is a DNS resolver?
+MEDIUM,What is DHCP and how does it assign an IP address?
+MEDIUM,What is the DHCP DORA process?
+MEDIUM,What is ARP?
+MEDIUM,Why is ARP required in IPv4 networks?
+MEDIUM,What is an ARP table?
+MEDIUM,What is ICMP?
+MEDIUM,How does ping work?
+MEDIUM,How does traceroute work?
+MEDIUM,What is routing?
+MEDIUM,What is a routing table?
+MEDIUM,What is static routing?
+MEDIUM,What is dynamic routing?
+MEDIUM,What is the difference between a router and a switch?
+MEDIUM,What is the difference between a switch and a hub?
+MEDIUM,What is VLAN?
+MEDIUM,Why are VLANs used?
+MEDIUM,What is a private IP address?
+MEDIUM,What is a public IP address?
+MEDIUM,What is the difference between private and public IP addresses?
+MEDIUM,How does NAT work?
+MEDIUM,Why is NAT commonly used?
+MEDIUM,What is port forwarding?
+MEDIUM,What is a firewall rule?
+MEDIUM,What is a proxy?
+MEDIUM,What is a reverse proxy?
+MEDIUM,What is load balancing?
+MEDIUM,Why is HTTPS more secure than HTTP?
+MEDIUM,What is TLS?
+HARD,Explain what happens at every layer when a client sends an HTTP request to a server.
+HARD,Explain encapsulation and decapsulation across the OSI model.
+HARD,Compare the OSI model and TCP/IP model.
+HARD,Why was the OSI model created?
+HARD,Explain how TCP establishes a connection using the three-way handshake.
+HARD,Why does TCP require sequence and acknowledgment numbers?
+HARD,How does TCP guarantee reliable delivery?
+HARD,How does TCP detect lost packets?
+HARD,How does TCP handle packets arriving out of order?
+HARD,Explain TCP flow control using the receive window.
+HARD,Explain TCP congestion control.
+HARD,What are slow start congestion avoidance fast retransmit and fast recovery?
+HARD,What is TCP congestion window?
+HARD,What happens when a TCP receiver advertises a zero window?
+HARD,How does TCP retransmission timeout work?
+HARD,Why can TCP perform poorly on high-latency networks?
+HARD,When would UDP be preferred over TCP?
+HARD,How does DNS resolution work from a browser to an authoritative DNS server?
+HARD,What is DNS caching and how does TTL affect it?
+HARD,What happens when DNS is unavailable but an IP address is known?
+HARD,Explain recursive versus iterative DNS queries.
+HARD,How does DHCP work from a client joining a network?
+HARD,Explain the DHCP DORA process in detail.
+HARD,How does ARP resolve an IPv4 address to a MAC address?
+HARD,What happens when an ARP cache entry expires?
+HARD,How does a router determine where to forward an IP packet?
+HARD,What is longest-prefix matching in routing?
+HARD,How does a routing table determine the next hop?
+HARD,Compare static routing and dynamic routing.
+HARD,What is a routing protocol?
+HARD,Compare distance-vector and link-state routing.
+HARD,What is OSPF?
+HARD,What is BGP?
+HARD,Why is BGP important for the Internet?
+HARD,What is the difference between an autonomous system and a subnet?
+HARD,Explain subnetting using CIDR notation.
+HARD,How would you calculate the number of usable hosts in an IPv4 subnet?
+HARD,What is VLSM and why is it useful?
+HARD,Explain private IP addressing and NAT in a home network.
+HARD,What is PAT and how is it different from basic NAT?
+HARD,How does port forwarding allow external clients to reach an internal server?
+HARD,What is a VLAN and how does it separate broadcast domains?
+HARD,How does a switch learn MAC addresses?
+HARD,What happens when a switch receives a frame for an unknown destination MAC?
+HARD,What is a broadcast domain?
+HARD,What is a collision domain?
+HARD,How does a firewall inspect and filter network traffic?
+HARD,What is a reverse proxy and why is it useful in production systems?
+HARD,How does a load balancer distribute traffic among backend servers?
+HARD,How would you troubleshoot a slow API request from browser to backend?

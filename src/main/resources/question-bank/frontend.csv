@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is frontend development?
+EASY,What is HTML?
+EASY,What is CSS?
+EASY,What is JavaScript?
+EASY,What is the difference between HTML CSS and JavaScript?
+EASY,What is an HTML element?
+EASY,What is an HTML attribute?
+EASY,What is the purpose of the HTML head element?
+EASY,What is the purpose of the HTML body element?
+EASY,What is a semantic HTML element?
+EASY,What is the difference between div and span?
+EASY,What is a form in HTML?
+EASY,What is an input element?
+EASY,What is the purpose of the label element?
+EASY,What is CSS selector?
+EASY,What is a CSS class selector?
+EASY,What is an ID selector in CSS?
+EASY,What is the CSS box model?
+EASY,What is margin in CSS?
+EASY,What is padding in CSS?
+EASY,What is border in CSS?
+EASY,What is display block?
+EASY,What is display inline?
+EASY,What is display inline-block?
+EASY,What is Flexbox?
+EASY,What is CSS Grid?
+EASY,What is responsive web design?
+EASY,What is a media query?
+EASY,What is JavaScript variable?
+EASY,What is the difference between let const and var?
+EASY,What are JavaScript data types?
+EASY,What is a JavaScript function?
+EASY,What is an arrow function?
+EASY,What is an array in JavaScript?
+EASY,What is an object in JavaScript?
+EASY,What is the DOM?
+EASY,What is DOM manipulation?
+EASY,What is an event in JavaScript?
+EASY,What is an event listener?
+EASY,What is event bubbling?
+EASY,What is event handling?
+EASY,What is JSON?
+EASY,What is localStorage?
+EASY,What is sessionStorage?
+EASY,What is a Promise in JavaScript?
+EASY,What is asynchronous JavaScript?
+EASY,What is fetch()?
+EASY,What is an API call from the frontend?
+EASY,What is CORS?
+EASY,What is browser developer tools?
+MEDIUM,What is the difference between semantic and non-semantic HTML?
+MEDIUM,Why is semantic HTML important for accessibility?
+MEDIUM,What is the difference between id and class in HTML?
+MEDIUM,What is HTML form validation?
+MEDIUM,What is the difference between GET and POST forms?
+MEDIUM,What are HTML data attributes?
+MEDIUM,What is CSS specificity?
+MEDIUM,How does CSS inheritance work?
+MEDIUM,What is the difference between relative absolute fixed and sticky positioning?
+MEDIUM,What is z-index?
+MEDIUM,What is the difference between Flexbox and CSS Grid?
+MEDIUM,How do you center an element using Flexbox?
+MEDIUM,What are CSS pseudo-classes?
+MEDIUM,What are CSS pseudo-elements?
+MEDIUM,What are CSS transitions?
+MEDIUM,What are CSS animations?
+MEDIUM,What are CSS variables?
+MEDIUM,What is mobile-first responsive design?
+MEDIUM,What is the difference between em rem and px?
+MEDIUM,What is the difference between visibility hidden and display none?
+MEDIUM,What is the difference between == and === in JavaScript?
+MEDIUM,What is type coercion in JavaScript?
+MEDIUM,What are truthy and falsy values?
+MEDIUM,What is scope in JavaScript?
+MEDIUM,What is lexical scope?
+MEDIUM,What is a closure in JavaScript?
+MEDIUM,What is hoisting in JavaScript?
+MEDIUM,What is the temporal dead zone?
+MEDIUM,What is the difference between function declaration and function expression?
+MEDIUM,What is a callback function?
+MEDIUM,What is the difference between map filter and reduce?
+MEDIUM,What is destructuring in JavaScript?
+MEDIUM,What is the spread operator?
+MEDIUM,What is the rest parameter?
+MEDIUM,What is optional chaining?
+MEDIUM,What is nullish coalescing?
+MEDIUM,What is the difference between shallow copy and deep copy?
+MEDIUM,What is the JavaScript event loop?
+MEDIUM,What is the call stack?
+MEDIUM,What is the callback queue?
+MEDIUM,What is the microtask queue?
+MEDIUM,What is async and await?
+MEDIUM,How do you handle errors in asynchronous JavaScript?
+MEDIUM,What is the difference between localStorage sessionStorage and cookies?
+MEDIUM,What is debouncing?
+MEDIUM,What is throttling?
+MEDIUM,How does fetch handle HTTP responses?
+MEDIUM,What is frontend form state?
+MEDIUM,What is client-side routing?
+MEDIUM,What is lazy loading in frontend applications?
+HARD,Explain how a browser converts HTML CSS and JavaScript into a rendered webpage.
+HARD,What are the DOM CSSOM and render tree?
+HARD,Explain the browser critical rendering path.
+HARD,What causes layout reflow and repaint?
+HARD,How can frontend code reduce unnecessary reflows?
+HARD,What is the difference between reflow and repaint?
+HARD,How does browser caching improve frontend performance?
+HARD,What are HTTP caching headers used by browsers?
+HARD,What is cache-control and how does it affect frontend resources?
+HARD,How would you optimize a slow-loading frontend application?
+HARD,What is code splitting?
+HARD,What is tree shaking?
+HARD,What is bundling in frontend development?
+HARD,What is a JavaScript module?
+HARD,What are ES modules?
+HARD,What is the difference between synchronous and asynchronous execution in JavaScript?
+HARD,Explain the JavaScript event loop in detail.
+HARD,How are microtasks and macrotasks scheduled?
+HARD,What happens when a Promise callback and setTimeout are both scheduled?
+HARD,What is the difference between Promise.all Promise.allSettled Promise.race and Promise.any?
+HARD,How does JavaScript garbage collection work at a high level?
+HARD,What causes memory leaks in frontend applications?
+HARD,How would you identify a memory leak using browser developer tools?
+HARD,What is event delegation and why is it useful?
+HARD,How does event bubbling differ from event capturing?
+HARD,What is preventDefault() versus stopPropagation()?
+HARD,How would you prevent duplicate API requests from rapid user clicks?
+HARD,How would you implement frontend debouncing for a search box?
+HARD,How would you implement infinite scrolling efficiently?
+HARD,How would you optimize rendering of thousands of DOM elements?
+HARD,What is virtualization in frontend applications?
+HARD,What are Web Workers?
+HARD,When should Web Workers be used?
+HARD,What is the difference between cookies localStorage and sessionStorage from a security perspective?
+HARD,Why should sensitive authentication tokens not automatically be stored in localStorage?
+HARD,What is cross-site scripting and how can frontend applications prevent it?
+HARD,What is Content Security Policy?
+HARD,What is CSRF and how does it affect browser-based applications?
+HARD,How does CORS work between a frontend and backend?
+HARD,What is preflight in CORS?
+HARD,Why does a browser send an OPTIONS request before some API requests?
+HARD,How would you handle authentication state in a frontend application?
+HARD,How would you protect frontend routes that require authentication?
+HARD,Why is frontend route protection alone not sufficient for security?
+HARD,How should a frontend handle expired access tokens?
+HARD,How would you design a reusable API client for a frontend application?
+HARD,How would you handle API loading error and success states consistently?
+HARD,How would you design a large frontend application so components remain maintainable?
+HARD,What is accessibility and how would you make a frontend application accessible?
+HARD,How would you test frontend applications for performance accessibility and browser compatibility?

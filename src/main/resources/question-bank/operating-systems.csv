@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is an operating system?
+EASY,Why do we need an operating system?
+EASY,What are the main responsibilities of an operating system?
+EASY,What is a process?
+EASY,What is a program?
+EASY,What is the difference between a process and a program?
+EASY,What is a thread?
+EASY,What is the difference between a process and a thread?
+EASY,What is a multithreaded process?
+EASY,What is process scheduling?
+EASY,What is a scheduler?
+EASY,What is a CPU scheduler?
+EASY,What is context switching?
+EASY,What is a process state?
+EASY,What are the common states of a process?
+EASY,What is the ready state?
+EASY,What is the running state?
+EASY,What is the waiting state?
+EASY,What is process termination?
+EASY,What is a PCB?
+EASY,What is a Process Control Block?
+EASY,What is inter-process communication?
+EASY,What is IPC?
+EASY,What is shared memory?
+EASY,What is message passing?
+EASY,What is a system call?
+EASY,Why are system calls needed?
+EASY,What is kernel mode?
+EASY,What is user mode?
+EASY,What is the kernel?
+EASY,What is multitasking?
+EASY,What is multiprocessing?
+EASY,What is multithreading?
+EASY,What is time sharing?
+EASY,What is a CPU burst?
+EASY,What is an I/O burst?
+EASY,What is CPU scheduling?
+EASY,What is FCFS scheduling?
+EASY,What is SJF scheduling?
+EASY,What is Round Robin scheduling?
+EASY,What is priority scheduling?
+EASY,What is a race condition?
+EASY,What is synchronization?
+EASY,What is a critical section?
+EASY,What is a semaphore?
+EASY,What is a mutex?
+EASY,What is deadlock?
+EASY,What is starvation?
+EASY,What is memory management?
+EASY,What is virtual memory?
+MEDIUM,Explain the different states in a process lifecycle.
+MEDIUM,What information is stored in a Process Control Block?
+MEDIUM,What happens during a context switch?
+MEDIUM,Why is context switching expensive?
+MEDIUM,What is the difference between a process context switch and a thread context switch?
+MEDIUM,What is process creation?
+MEDIUM,What is process termination?
+MEDIUM,What is the difference between fork and exec?
+MEDIUM,What is a zombie process?
+MEDIUM,What is an orphan process?
+MEDIUM,What is a daemon process?
+MEDIUM,What is inter-process communication and why is it needed?
+MEDIUM,Compare shared memory and message passing.
+MEDIUM,What are pipes in operating systems?
+MEDIUM,What is a named pipe?
+MEDIUM,What is a socket in operating systems?
+MEDIUM,What is CPU scheduling?
+MEDIUM,What is the difference between preemptive and non-preemptive scheduling?
+MEDIUM,What are the advantages and disadvantages of FCFS scheduling?
+MEDIUM,How does Shortest Job First scheduling work?
+MEDIUM,What is Shortest Remaining Time First scheduling?
+MEDIUM,How does Round Robin scheduling work?
+MEDIUM,What is time quantum in Round Robin?
+MEDIUM,What happens if the Round Robin time quantum is too small?
+MEDIUM,What happens if the Round Robin time quantum is too large?
+MEDIUM,What is priority scheduling?
+MEDIUM,What is priority inversion?
+MEDIUM,What is aging in process scheduling?
+MEDIUM,What is turnaround time?
+MEDIUM,What is waiting time?
+MEDIUM,What is response time?
+MEDIUM,What is throughput?
+MEDIUM,What is a critical section problem?
+MEDIUM,What are the requirements for a correct critical-section solution?
+MEDIUM,What is mutual exclusion?
+MEDIUM,What is a mutex lock?
+MEDIUM,What is a binary semaphore?
+MEDIUM,What is a counting semaphore?
+MEDIUM,What is the difference between a mutex and semaphore?
+MEDIUM,What is a race condition and how can it be prevented?
+MEDIUM,What is busy waiting?
+MEDIUM,What is a monitor in operating systems?
+MEDIUM,What is deadlock?
+MEDIUM,What are the four necessary conditions for deadlock?
+MEDIUM,What is deadlock prevention?
+MEDIUM,What is deadlock avoidance?
+MEDIUM,What is deadlock detection?
+MEDIUM,What is deadlock recovery?
+MEDIUM,What is the Banker's algorithm?
+MEDIUM,What is starvation and how can it be prevented?
+HARD,Explain the complete lifecycle of a process from creation to termination.
+HARD,How does the operating system perform a context switch?
+HARD,What information must be saved during a context switch?
+HARD,Why can excessive context switching reduce system performance?
+HARD,How does fork create a new process?
+HARD,What happens when fork is combined with exec?
+HARD,How would you prevent zombie processes?
+HARD,Explain how orphan processes are handled by the operating system.
+HARD,How do processes communicate using shared memory?
+HARD,What synchronization problems can occur when processes share memory?
+HARD,How would you design IPC for two processes that frequently exchange data?
+HARD,Compare shared memory pipes message queues and sockets for IPC.
+HARD,Explain how CPU scheduling affects system performance.
+HARD,How would you calculate waiting turnaround and response time for a scheduling problem?
+HARD,Compare FCFS SJF SRTF Priority and Round Robin scheduling.
+HARD,Why does SJF provide minimum average waiting time under ideal assumptions?
+HARD,What is the starvation problem in SJF or priority scheduling?
+HARD,How does aging prevent starvation?
+HARD,How would you choose an appropriate Round Robin time quantum?
+HARD,What is priority inversion and how can priority inheritance solve it?
+HARD,Explain the critical-section problem and its three requirements.
+HARD,How does a mutex prevent multiple threads from entering a critical section?
+HARD,How can incorrect mutex usage cause deadlock?
+HARD,Explain semaphore wait and signal operations.
+HARD,How can semaphores be used to solve the producer-consumer problem?
+HARD,How would you implement synchronization for the readers-writers problem?
+HARD,What is the dining philosophers problem and what does it demonstrate?
+HARD,How can deadlock occur in a multithreaded program?
+HARD,Explain the four necessary conditions for deadlock with a practical example.
+HARD,How can deadlock be prevented by breaking one of its necessary conditions?
+HARD,Compare deadlock prevention avoidance detection and recovery.
+HARD,Explain the Banker's algorithm with a practical resource-allocation example.
+HARD,How does the operating system determine whether a state is safe?
+HARD,What is a safe state versus an unsafe state?
+HARD,Explain paging with logical and physical addresses.
+HARD,How does address translation work using a page table?
+HARD,How does a TLB improve address-translation performance?
+HARD,What happens when a TLB miss occurs?
+HARD,What happens when a page fault occurs?
+HARD,Explain the complete page-fault handling process.
+HARD,What is demand paging?
+HARD,What is page replacement?
+HARD,Compare FIFO LRU and Optimal page-replacement algorithms.
+HARD,What is Belady's anomaly?
+HARD,Why can increasing the number of frames sometimes increase page faults with FIFO?
+HARD,What is thrashing?
+HARD,What is fragmentation?
+HARD,Compare internal and external fragmentation.
+HARD,What is segmentation and how does it differ from paging?
+HARD,How does virtual memory allow programs to use more memory than physically available?

@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is React?
+EASY,Why is React used?
+EASY,What is a component in React?
+EASY,What is JSX?
+EASY,Why is JSX used in React?
+EASY,What is the difference between JSX and HTML?
+EASY,What is a React element?
+EASY,What is a functional component?
+EASY,What are props?
+EASY,What is state in React?
+EASY,What is the difference between props and state?
+EASY,What is the useState hook?
+EASY,What is the useEffect hook?
+EASY,What is an event in React?
+EASY,How do you handle a button click in React?
+EASY,What is conditional rendering?
+EASY,How do you render a list in React?
+EASY,Why is the key prop needed when rendering lists?
+EASY,What is a fragment in React?
+EASY,What is React Fragment?
+EASY,What is a controlled component?
+EASY,What is an uncontrolled component?
+EASY,What is a form in React?
+EASY,How do you handle input values in React?
+EASY,What is lifting state up?
+EASY,What is prop drilling?
+EASY,What is the virtual DOM?
+EASY,What is the DOM?
+EASY,How does React update the UI?
+EASY,What is reconciliation?
+EASY,What is a React Hook?
+EASY,What are the Rules of Hooks?
+EASY,Why can't Hooks normally be called inside loops?
+EASY,Why can't Hooks normally be called inside conditions?
+EASY,What is useRef?
+EASY,What is useContext?
+EASY,What is useMemo?
+EASY,What is useCallback?
+EASY,What is a custom Hook?
+EASY,What is React Router?
+EASY,What is routing in a React application?
+EASY,What is a route?
+EASY,What is an API call from React?
+EASY,How can React communicate with a backend?
+EASY,What is fetch?
+EASY,What is Axios?
+EASY,What is npm?
+EASY,What is package.json?
+EASY,What is Vite?
+EASY,Why is Vite commonly used with React?
+MEDIUM,Explain the component-based architecture of React.
+MEDIUM,Explain how JSX is converted into JavaScript.
+MEDIUM,How does React reconciliation work?
+MEDIUM,What is the difference between the virtual DOM and the real DOM?
+MEDIUM,How does React decide which elements need to be updated?
+MEDIUM,Why are keys important when rendering lists?
+MEDIUM,Why should array indexes generally not be used as React keys?
+MEDIUM,Explain the difference between props and state with an example.
+MEDIUM,How does state update trigger a React component re-render?
+MEDIUM,Why can state updates appear asynchronous?
+MEDIUM,Why should React state not be mutated directly?
+MEDIUM,How do you update an object stored in state?
+MEDIUM,How do you update an array stored in state?
+MEDIUM,How do you update state based on its previous value?
+MEDIUM,Explain useEffect and its dependency array.
+MEDIUM,What happens when useEffect has an empty dependency array?
+MEDIUM,What happens when useEffect has no dependency array?
+MEDIUM,How do you perform cleanup inside useEffect?
+MEDIUM,How can useEffect create an infinite render loop?
+MEDIUM,How do you fetch API data using useEffect?
+MEDIUM,What is the difference between useEffect and useMemo?
+MEDIUM,What is the difference between useMemo and useCallback?
+MEDIUM,When should useMemo be used?
+MEDIUM,When should useCallback be used?
+MEDIUM,What is React.memo?
+MEDIUM,How does React.memo improve performance?
+MEDIUM,What is prop drilling and how can it be avoided?
+MEDIUM,How does useContext solve prop drilling?
+MEDIUM,What are the limitations of Context API?
+MEDIUM,What is state lifting?
+MEDIUM,How do parent and child components communicate?
+MEDIUM,How can a child component send data to its parent?
+MEDIUM,What is a controlled input?
+MEDIUM,Why are controlled components useful for forms?
+MEDIUM,How do you validate a React form?
+MEDIUM,How do you handle multiple input fields using one state object?
+MEDIUM,What is React Router used for?
+MEDIUM,What is the difference between Link and a normal anchor tag?
+MEDIUM,How do route parameters work in React Router?
+MEDIUM,How do you create protected routes?
+MEDIUM,How do you handle loading and error states during API calls?
+MEDIUM,How do you send JSON data from React to a Spring Boot backend?
+MEDIUM,How do you handle CORS when React and Spring Boot run on different ports?
+MEDIUM,What is an environment variable in a React application?
+MEDIUM,How should API base URLs be configured for different environments?
+MEDIUM,What is component composition?
+MEDIUM,What is a custom Hook and when should you create one?
+MEDIUM,What is the difference between local state and global state?
+MEDIUM,When would you use Context API instead of passing props?
+MEDIUM,What are common causes of unnecessary React re-renders?
+HARD,Explain the complete lifecycle of a React component using modern functional components.
+HARD,Explain how React reconciliation and the diffing algorithm work conceptually.
+HARD,How does React determine whether a component should re-render?
+HARD,Explain how state updates are scheduled and processed in React.
+HARD,Why can multiple state updates be batched?
+HARD,How would you prevent unnecessary re-renders in a large React application?
+HARD,Compare React.memo useMemo and useCallback and explain when each should be used.
+HARD,Why can excessive use of useMemo and useCallback hurt rather than improve performance?
+HARD,How would you debug unnecessary React re-renders?
+HARD,How would you design a reusable custom Hook for API requests?
+HARD,How would you handle cancellation of an API request when a component unmounts?
+HARD,How would you prevent stale data from an asynchronous useEffect?
+HARD,How would you handle race conditions between multiple API requests?
+HARD,How would you design a reusable form component with validation?
+HARD,How would you manage a large form containing dozens of fields?
+HARD,How would you implement client-side form validation?
+HARD,How would you handle authentication state across a React application?
+HARD,How would you implement login and logout with a Spring Boot backend?
+HARD,Where should an authentication token be stored in a React application?
+HARD,What security risks exist when storing tokens in browser storage?
+HARD,How would you implement protected routes for authenticated users?
+HARD,How would you handle token expiration in a React application?
+HARD,How would you automatically attach authentication credentials to API requests?
+HARD,How would you handle a 401 response globally?
+HARD,How would you implement role-based UI access in React?
+HARD,How would you design a React frontend for an interview platform?
+HARD,How would you implement a one-question-at-a-time interview interface?
+HARD,How would you prevent users from accidentally submitting the same interview answer twice?
+HARD,How would you display loading feedback while the next interview question is being fetched?
+HARD,How would you handle an API failure while the user is taking an interview?
+HARD,How would you preserve interview progress if the browser refreshes?
+HARD,How would you prevent users from directly accessing pages they are not authorized to use?
+HARD,How would you design reusable question and answer components?
+HARD,How would you structure a large React application into maintainable folders?
+HARD,How would you separate API logic from React UI components?
+HARD,How would you create a reusable API service layer for a Spring Boot backend?
+HARD,How would you handle global application state without creating unnecessary complexity?
+HARD,Compare Context API Redux and local component state for state management.
+HARD,How would you optimize a React page displaying thousands of records?
+HARD,What is list virtualization and when would you use it?
+HARD,How would you optimize a React application with slow initial loading?
+HARD,What is code splitting in React?
+HARD,How does lazy loading work with React?
+HARD,How would you implement error boundaries?
+HARD,How would you handle frontend environment configurations for development staging and production?
+HARD,How would you deploy a React application to a production environment?
+HARD,How would you connect a Vite React frontend to a Spring Boot REST API in production?
+HARD,How would you troubleshoot a React application that works locally but fails after deployment?
+HARD,How would you design React components so they remain reusable as the application grows?
+HARD,How would you test a React component that fetches data from a backend API?

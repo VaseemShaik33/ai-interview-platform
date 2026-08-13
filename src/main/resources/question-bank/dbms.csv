@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is a DBMS?
+EASY,Why do we need a DBMS?
+EASY,What is a database?
+EASY,What is the difference between data and information?
+EASY,What is a relational database?
+EASY,What is a table?
+EASY,What is a row in a database?
+EASY,What is a column in a database?
+EASY,What is a schema?
+EASY,What is a database instance?
+EASY,What is a primary key?
+EASY,What is a foreign key?
+EASY,What is a candidate key?
+EASY,What is a super key?
+EASY,What is an alternate key?
+EASY,What is a composite key?
+EASY,What is a unique key?
+EASY,What is a constraint?
+EASY,What is entity integrity?
+EASY,What is referential integrity?
+EASY,What is domain integrity?
+EASY,What is data integrity?
+EASY,What is data redundancy?
+EASY,What is data inconsistency?
+EASY,What is data independence?
+EASY,What is physical data independence?
+EASY,What is logical data independence?
+EASY,What is an entity?
+EASY,What is an attribute?
+EASY,What is a relationship?
+EASY,What is an ER diagram?
+EASY,What is an entity set?
+EASY,What is a relationship set?
+EASY,What is cardinality?
+EASY,What is one-to-one relationship?
+EASY,What is one-to-many relationship?
+EASY,What is many-to-many relationship?
+EASY,What is normalization?
+EASY,Why is normalization needed?
+EASY,What is denormalization?
+EASY,What is 1NF?
+EASY,What is 2NF?
+EASY,What is 3NF?
+EASY,What is BCNF?
+EASY,What is a transaction?
+EASY,What is ACID?
+EASY,What is atomicity?
+EASY,What is consistency?
+EASY,What is isolation?
+EASY,What is durability?
+MEDIUM,Explain the difference between DBMS and RDBMS.
+MEDIUM,What are the advantages of using a DBMS?
+MEDIUM,What are the disadvantages of a DBMS?
+MEDIUM,What are the different types of DBMS?
+MEDIUM,What is a hierarchical database model?
+MEDIUM,What is a network database model?
+MEDIUM,What is a relational database model?
+MEDIUM,What is an object-oriented database model?
+MEDIUM,What is a functional dependency?
+MEDIUM,What is a trivial functional dependency?
+MEDIUM,What is a non-trivial functional dependency?
+MEDIUM,What is a partial dependency?
+MEDIUM,What is a transitive dependency?
+MEDIUM,Why does 2NF remove partial dependency?
+MEDIUM,Why does 3NF remove transitive dependency?
+MEDIUM,What is the difference between 3NF and BCNF?
+MEDIUM,When is a relation in 1NF?
+MEDIUM,When is a relation in 2NF?
+MEDIUM,When is a relation in 3NF?
+MEDIUM,What is lossless decomposition?
+MEDIUM,What is dependency preservation?
+MEDIUM,Why is lossless decomposition important?
+MEDIUM,Why is dependency preservation important?
+MEDIUM,What is a decomposition of a relation?
+MEDIUM,What is a prime attribute?
+MEDIUM,What is a non-prime attribute?
+MEDIUM,What is an ER-to-relational mapping?
+MEDIUM,How is a one-to-many relationship represented in relational tables?
+MEDIUM,How is a many-to-many relationship represented in relational tables?
+MEDIUM,How is a one-to-one relationship represented in relational tables?
+MEDIUM,What is a weak entity?
+MEDIUM,What is a strong entity?
+MEDIUM,What is a partial key?
+MEDIUM,What is participation constraint?
+MEDIUM,What is total participation?
+MEDIUM,What is partial participation?
+MEDIUM,What is a recursive relationship?
+MEDIUM,What is a multivalued attribute?
+MEDIUM,What is a derived attribute?
+MEDIUM,What is a composite attribute?
+MEDIUM,What is a transaction schedule?
+MEDIUM,What is a serial schedule?
+MEDIUM,What is a non-serial schedule?
+MEDIUM,What is a serializable schedule?
+MEDIUM,What is view serializability?
+MEDIUM,What is a recoverable schedule?
+MEDIUM,What is a cascading rollback?
+MEDIUM,What is a cascadeless schedule?
+MEDIUM,What is concurrency control?
+MEDIUM,Why is concurrency control required?
+HARD,Explain the three-schema architecture of a DBMS.
+HARD,Explain the difference between external conceptual and internal schemas.
+HARD,How does data independence work in the three-schema architecture?
+HARD,Explain physical data independence with an example.
+HARD,Explain logical data independence with an example.
+HARD,How does a DBMS manage data redundancy?
+HARD,Explain functional dependencies with a practical example.
+HARD,How do you determine candidate keys using functional dependencies?
+HARD,What are attribute closures and why are they useful?
+HARD,How do you find the closure of a set of attributes?
+HARD,What are Armstrong's axioms?
+HARD,Explain reflexivity augmentation and transitivity in functional dependencies.
+HARD,What is a minimal cover of functional dependencies?
+HARD,How do you find a minimal cover?
+HARD,How can functional dependencies be used to identify candidate keys?
+HARD,Explain partial and transitive dependencies using a practical example.
+HARD,How would you normalize a table from an unnormalized form to 3NF?
+HARD,How do you determine whether a decomposition is lossless?
+HARD,How do you determine whether a decomposition preserves dependencies?
+HARD,Why can BCNF decomposition fail to preserve dependencies?
+HARD,When would you prefer 3NF over BCNF?
+HARD,What is multivalued dependency?
+HARD,What is 4NF?
+HARD,What is join dependency?
+HARD,What is 5NF?
+HARD,Why can excessive normalization hurt performance?
+HARD,When should a database be denormalized?
+HARD,Explain conflict serializability using a precedence graph.
+HARD,How do you determine whether a schedule is conflict serializable?
+HARD,What is the difference between conflict and view serializability?
+HARD,Why is every conflict-serializable schedule view-serializable?
+HARD,What is a recoverable schedule and why is it important?
+HARD,What is cascading rollback and how can it be avoided?
+HARD,Explain strict schedules and why they are useful for recovery.
+HARD,What are shared and exclusive locks?
+HARD,What is two-phase locking?
+HARD,Explain the growing and shrinking phases of 2PL.
+HARD,What is strict two-phase locking?
+HARD,What is conservative two-phase locking?
+HARD,How does two-phase locking guarantee conflict serializability?
+HARD,What is a deadlock in DBMS?
+HARD,How can deadlocks occur when using locks?
+HARD,What are deadlock prevention techniques in DBMS?
+HARD,What is deadlock detection?
+HARD,What is timestamp ordering protocol?
+HARD,What is optimistic concurrency control?
+HARD,Compare locking-based and timestamp-based concurrency control.
+HARD,What is database recovery?
+HARD,What is write-ahead logging?
+HARD,How does checkpointing help database recovery?

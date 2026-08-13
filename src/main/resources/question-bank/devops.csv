@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is DevOps?
+EASY,Why is DevOps used?
+EASY,What problem does DevOps solve?
+EASY,What is CI?
+EASY,What is CD?
+EASY,What is CI/CD?
+EASY,What is continuous integration?
+EASY,What is continuous delivery?
+EASY,What is continuous deployment?
+EASY,What is version control?
+EASY,What is Git?
+EASY,What is GitHub?
+EASY,What is a Git repository?
+EASY,What is a Git branch?
+EASY,What is a Git commit?
+EASY,What is a Git merge?
+EASY,What is a pull request?
+EASY,What is a Git conflict?
+EASY,What is Jenkins?
+EASY,What is a CI/CD pipeline?
+EASY,What is build automation?
+EASY,What is automated testing?
+EASY,What is deployment?
+EASY,What is Docker?
+EASY,What is a Docker image?
+EASY,What is a Docker container?
+EASY,What is a Dockerfile?
+EASY,What is Docker Hub?
+EASY,What is containerization?
+EASY,What is a virtual machine?
+EASY,What is Kubernetes?
+EASY,What is a Kubernetes pod?
+EASY,What is a Kubernetes deployment?
+EASY,What is a Kubernetes service?
+EASY,What is infrastructure?
+EASY,What is Infrastructure as Code?
+EASY,What is Terraform?
+EASY,What is Ansible?
+EASY,What is monitoring?
+EASY,What is logging?
+EASY,What is observability?
+EASY,What is a server?
+EASY,What is a cloud server?
+EASY,What is environment configuration?
+EASY,What is a development environment?
+EASY,What is a testing environment?
+EASY,What is a production environment?
+EASY,What is environment variable?
+EASY,What is a secret in DevOps?
+EASY,Why should secrets not be stored in source code?
+MEDIUM,Explain the typical stages of a CI/CD pipeline.
+MEDIUM,What happens when code is pushed to a Git repository?
+MEDIUM,How does continuous integration work?
+MEDIUM,How does continuous delivery differ from continuous deployment?
+MEDIUM,Why are automated tests important in CI/CD?
+MEDIUM,What is a build artifact?
+MEDIUM,What is a build server?
+MEDIUM,What is a pipeline trigger?
+MEDIUM,What is a pipeline stage?
+MEDIUM,What is a pipeline job?
+MEDIUM,What is a pipeline agent?
+MEDIUM,What is Jenkins Pipeline?
+MEDIUM,What is a Jenkinsfile?
+MEDIUM,What is the difference between declarative and scripted Jenkins pipelines?
+MEDIUM,How do you connect Jenkins to GitHub?
+MEDIUM,How can Jenkins automatically trigger a build after a GitHub push?
+MEDIUM,What is a webhook?
+MEDIUM,What is a Docker image layer?
+MEDIUM,What is the difference between a Docker image and container?
+MEDIUM,How does Dockerfile work?
+MEDIUM,What is a Docker volume?
+MEDIUM,What is Docker networking?
+MEDIUM,What is a Docker registry?
+MEDIUM,What is Docker Compose?
+MEDIUM,When would you use Docker Compose?
+MEDIUM,What is a multi-stage Docker build?
+MEDIUM,Why should Docker images be kept small?
+MEDIUM,What is container orchestration?
+MEDIUM,Why is Kubernetes needed?
+MEDIUM,What is a Kubernetes cluster?
+MEDIUM,What is a Kubernetes node?
+MEDIUM,What is a Kubernetes pod?
+MEDIUM,What is a Kubernetes deployment?
+MEDIUM,What is a Kubernetes ReplicaSet?
+MEDIUM,What is a Kubernetes Service?
+MEDIUM,What is Kubernetes ConfigMap?
+MEDIUM,What is Kubernetes Secret?
+MEDIUM,What is Kubernetes namespace?
+MEDIUM,What is Kubernetes ingress?
+MEDIUM,What is Kubernetes rolling deployment?
+MEDIUM,What is Kubernetes self-healing?
+MEDIUM,What is Infrastructure as Code?
+MEDIUM,What is Terraform state?
+MEDIUM,What is a Terraform provider?
+MEDIUM,What is a Terraform resource?
+MEDIUM,What is terraform plan?
+MEDIUM,What is terraform apply?
+MEDIUM,What is Ansible?
+MEDIUM,What is an Ansible playbook?
+MEDIUM,What is configuration management?
+HARD,Design a complete CI/CD pipeline for a Spring Boot application.
+HARD,How would you build and test a Java application automatically after every Git push?
+HARD,How would you design a Jenkins pipeline for build test Docker image creation and deployment?
+HARD,How would you securely store database passwords in a CI/CD pipeline?
+HARD,How would you prevent secrets from appearing in Jenkins logs?
+HARD,How would you handle a failed deployment in production?
+HARD,How would you implement automatic rollback in a CI/CD pipeline?
+HARD,How would you design a zero-downtime deployment strategy?
+HARD,Compare rolling blue-green and canary deployments.
+HARD,How would you implement a canary deployment?
+HARD,How would you monitor a deployment and automatically stop it when errors increase?
+HARD,How would you design CI/CD for multiple environments such as development testing staging and production?
+HARD,How would you promote the same build artifact from staging to production?
+HARD,Why is building once and deploying the same artifact important?
+HARD,How would you handle database migrations during application deployment?
+HARD,How would you containerize a Spring Boot application efficiently?
+HARD,How would you create a production-ready Dockerfile for Spring Boot?
+HARD,Why are multi-stage Docker builds useful?
+HARD,How would you reduce the size and security risks of a Docker image?
+HARD,How would you troubleshoot a container that starts and immediately stops?
+HARD,How would you troubleshoot a Docker container that cannot connect to a database?
+HARD,How would you design Docker networking for multiple application containers?
+HARD,How would you persist data when a Docker container is deleted?
+HARD,How would you scan Docker images for vulnerabilities?
+HARD,How would you deploy a containerized Spring Boot application to Kubernetes?
+HARD,How would you expose a Kubernetes application to users?
+HARD,Explain the complete flow from Kubernetes Deployment to running Pods.
+HARD,How does Kubernetes maintain the desired number of replicas?
+HARD,How does Kubernetes perform a rolling update?
+HARD,How would you perform a rollback in Kubernetes?
+HARD,How would you configure environment variables in Kubernetes?
+HARD,How would you securely provide database credentials to a Kubernetes application?
+HARD,How would you troubleshoot a Kubernetes Pod stuck in CrashLoopBackOff?
+HARD,How would you troubleshoot a Kubernetes Pod stuck in Pending state?
+HARD,How would you troubleshoot a Kubernetes Service that cannot reach Pods?
+HARD,What is the difference between liveness and readiness probes?
+HARD,How do liveness and readiness probes improve production reliability?
+HARD,How would you scale a Kubernetes application automatically?
+HARD,What is Horizontal Pod Autoscaling?
+HARD,How would you design Kubernetes for high availability?
+HARD,How would you manage infrastructure using Terraform?
+HARD,How would you structure Terraform code for multiple environments?
+HARD,How should Terraform state be stored in a team environment?
+HARD,What is Terraform state locking and why is it important?
+HARD,How would you safely manage infrastructure changes using Terraform?
+HARD,How would you use Ansible to configure multiple servers?
+HARD,What is the difference between configuration management and Infrastructure as Code?
+HARD,How would you design monitoring and logging for a production application?
+HARD,How would you investigate a sudden increase in application latency using logs metrics and traces?
+HARD,How would you design a complete production DevOps architecture for a Spring Boot application?

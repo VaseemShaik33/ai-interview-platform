@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is system design?
+EASY,Why is system design important?
+EASY,What is a software system?
+EASY,What is an application architecture?
+EASY,What is a client-server architecture?
+EASY,What is a monolithic architecture?
+EASY,What is a microservices architecture?
+EASY,What is the difference between monolith and microservices?
+EASY,What is scalability?
+EASY,What is vertical scaling?
+EASY,What is horizontal scaling?
+EASY,What is the difference between vertical and horizontal scaling?
+EASY,What is availability?
+EASY,What is reliability?
+EASY,What is fault tolerance?
+EASY,What is performance?
+EASY,What is latency?
+EASY,What is throughput?
+EASY,What is a bottleneck?
+EASY,What is a load balancer?
+EASY,Why is a load balancer used?
+EASY,What is a reverse proxy?
+EASY,What is caching?
+EASY,Why is caching useful?
+EASY,What is a CDN?
+EASY,Why is a CDN used?
+EASY,What is a database in system design?
+EASY,What is database replication?
+EASY,What is database sharding?
+EASY,What is a primary database?
+EASY,What is a replica database?
+EASY,What is a message queue?
+EASY,Why are message queues used?
+EASY,What is asynchronous processing?
+EASY,What is synchronous processing?
+EASY,What is an API gateway?
+EASY,What is REST?
+EASY,What is a stateless service?
+EASY,What is a stateful service?
+EASY,What is authentication?
+EASY,What is authorization?
+EASY,What is rate limiting?
+EASY,Why is rate limiting useful?
+EASY,What is a database index?
+EASY,What is database connection pooling?
+EASY,What is an availability zone?
+EASY,What is a region in cloud infrastructure?
+EASY,What is redundancy?
+EASY,What is a single point of failure?
+EASY,What is horizontal partitioning?
+MEDIUM,How do you approach a system design interview?
+MEDIUM,What requirements should you clarify before designing a system?
+MEDIUM,What is the difference between functional and non-functional requirements?
+MEDIUM,How do you estimate traffic for a system?
+MEDIUM,How do you estimate storage requirements?
+MEDIUM,What is back-of-the-envelope estimation?
+MEDIUM,How do you estimate requests per second?
+MEDIUM,How do you estimate bandwidth requirements?
+MEDIUM,How do you choose between SQL and NoSQL databases?
+MEDIUM,When would you use a relational database in system design?
+MEDIUM,When would you use a NoSQL database?
+MEDIUM,What is database replication and why is it useful?
+MEDIUM,What is master-replica replication?
+MEDIUM,What are the advantages and disadvantages of database replication?
+MEDIUM,What is database sharding?
+MEDIUM,Why is sharding used?
+MEDIUM,What is a shard key?
+MEDIUM,What makes a good shard key?
+MEDIUM,What is consistent hashing?
+MEDIUM,Why is consistent hashing useful?
+MEDIUM,What is cache-aside?
+MEDIUM,What is write-through caching?
+MEDIUM,What is write-back caching?
+MEDIUM,What is cache invalidation?
+MEDIUM,What is a cache stampede?
+MEDIUM,How can cache stampedes be prevented?
+MEDIUM,What is CDN caching?
+MEDIUM,What is the difference between a reverse proxy and a load balancer?
+MEDIUM,What is round-robin load balancing?
+MEDIUM,What is least-connections load balancing?
+MEDIUM,What is health-check based load balancing?
+MEDIUM,What is an API gateway?
+MEDIUM,What responsibilities can an API gateway handle?
+MEDIUM,What is service discovery?
+MEDIUM,Why is service discovery needed in microservices?
+MEDIUM,What is synchronous communication between services?
+MEDIUM,What is asynchronous communication between services?
+MEDIUM,What is a message broker?
+MEDIUM,What is the difference between Kafka and a traditional message queue?
+MEDIUM,What is eventual consistency?
+MEDIUM,What is strong consistency?
+MEDIUM,What is CAP theorem?
+MEDIUM,What are the three properties of CAP theorem?
+MEDIUM,What is partition tolerance?
+MEDIUM,What is database normalization in system design?
+MEDIUM,When might denormalization improve performance?
+MEDIUM,What is database indexing in a large-scale system?
+MEDIUM,What is a distributed system?
+MEDIUM,What is horizontal scaling in a distributed system?
+MEDIUM,What is fault tolerance?
+HARD,Design a URL shortening service like Bitly.
+HARD,Design a scalable rate-limiting service.
+HARD,Design a distributed caching system.
+HARD,Design a notification system for millions of users.
+HARD,Design a chat application like WhatsApp.
+HARD,Design a real-time messaging system.
+HARD,Design a video streaming service like YouTube.
+HARD,Design a photo-sharing application like Instagram.
+HARD,Design a social media news feed.
+HARD,Design a scalable file-storage service.
+HARD,Design a cloud file-sharing system like Google Drive.
+HARD,Design a ride-sharing system like Uber.
+HARD,Design a food-delivery system.
+HARD,Design an online payment system.
+HARD,Design an e-commerce system.
+HARD,Design an online ticket-booking system.
+HARD,Design a hotel-booking system.
+HARD,Design a job-search platform.
+HARD,Design an online interview platform.
+HARD,Design a system for conducting millions of coding interviews.
+HARD,How would you design a system that serves millions of API requests per second?
+HARD,How would you remove single points of failure from a distributed system?
+HARD,How would you design a highly available database architecture?
+HARD,How would you scale a database beyond the capacity of one server?
+HARD,How would you choose a shard key for a large distributed database?
+HARD,How would you handle hot partitions in a sharded database?
+HARD,How would you handle database replication lag?
+HARD,How would you design read replicas for a high-read application?
+HARD,How would you handle database failover?
+HARD,How would you design a cache for millions of users?
+HARD,How would you handle cache invalidation in a distributed system?
+HARD,How would you prevent a cache stampede?
+HARD,How would you design a CDN strategy for a global application?
+HARD,How would you design a load-balancing architecture for high availability?
+HARD,How would you handle a backend server failure while users are actively connected?
+HARD,How would you design asynchronous processing using message queues?
+HARD,How would you guarantee that important messages are not lost?
+HARD,What is at-most-once delivery?
+HARD,What is at-least-once delivery?
+HARD,What is exactly-once processing and why is it difficult?
+HARD,How would you make message processing idempotent?
+HARD,How would you handle duplicate messages in a distributed system?
+HARD,How would you design retry logic for failed service-to-service requests?
+HARD,What is a circuit breaker and where would you use it?
+HARD,How would you prevent cascading failures across microservices?
+HARD,How would you design observability for a distributed system?
+HARD,What are logs metrics and distributed traces?
+HARD,How would you troubleshoot high latency in a distributed system?
+HARD,How would you design disaster recovery for a critical application?
+HARD,How would you choose between availability consistency and partition tolerance when designing a distributed system?

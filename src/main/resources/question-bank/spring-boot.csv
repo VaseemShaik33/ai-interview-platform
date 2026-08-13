@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is Spring Boot?
+EASY,Why is Spring Boot used?
+EASY,What are the main advantages of Spring Boot?
+EASY,What is the difference between Spring and Spring Boot?
+EASY,What is Spring Boot auto-configuration?
+EASY,What is a Spring Boot starter?
+EASY,What is spring-boot-starter-web?
+EASY,What is spring-boot-starter-data-jpa?
+EASY,What is spring-boot-starter-security?
+EASY,What is the purpose of the Spring Boot parent POM?
+EASY,What is Spring Initializr?
+EASY,What is the main class in a Spring Boot application?
+EASY,What does @SpringBootApplication do?
+EASY,What is @Component?
+EASY,What is @Service?
+EASY,What is @Repository?
+EASY,What is @Controller?
+EASY,What is @RestController?
+EASY,What is dependency injection?
+EASY,What is constructor injection?
+EASY,What is @Autowired?
+EASY,What is an application.properties file?
+EASY,What is application.yml?
+EASY,What is the default port of a Spring Boot application?
+EASY,How can you change the default server port?
+EASY,What is an embedded server in Spring Boot?
+EASY,Which embedded server is commonly used by Spring Boot?
+EASY,What is a REST API?
+EASY,What is @GetMapping?
+EASY,What is @PostMapping?
+EASY,What is @PutMapping?
+EASY,What is @DeleteMapping?
+EASY,What is @RequestMapping?
+EASY,What is @PathVariable?
+EASY,What is @RequestParam?
+EASY,What is @RequestBody?
+EASY,What is @ResponseBody?
+EASY,What is Spring Data JPA?
+EASY,What is JPA?
+EASY,What is Hibernate?
+EASY,What is an entity in JPA?
+EASY,What does @Entity do?
+EASY,What does @Id do?
+EASY,What does @GeneratedValue do?
+EASY,What is JpaRepository?
+EASY,What is a DTO?
+EASY,Why do we use DTOs?
+EASY,What is Maven?
+EASY,What is a Spring Bean?
+EASY,What is the Spring ApplicationContext?
+MEDIUM,How does Spring Boot auto-configuration work?
+MEDIUM,How does Spring Boot decide which auto-configurations to apply?
+MEDIUM,What is conditional configuration in Spring Boot?
+MEDIUM,What is @ConditionalOnClass?
+MEDIUM,What is @ConditionalOnMissingBean?
+MEDIUM,What is @Configuration?
+MEDIUM,What is @Bean?
+MEDIUM,What is the difference between @Component and @Bean?
+MEDIUM,What is component scanning?
+MEDIUM,How does Spring discover beans?
+MEDIUM,What is the difference between constructor injection and field injection?
+MEDIUM,Why is constructor injection generally preferred?
+MEDIUM,What happens when multiple beans of the same type exist?
+MEDIUM,What is @Primary?
+MEDIUM,What is @Qualifier?
+MEDIUM,What is bean scope?
+MEDIUM,What are singleton and prototype bean scopes?
+MEDIUM,What is @Value in Spring Boot?
+MEDIUM,What is @ConfigurationProperties?
+MEDIUM,What is the difference between @Value and @ConfigurationProperties?
+MEDIUM,What are Spring Boot profiles?
+MEDIUM,How do you activate a Spring profile?
+MEDIUM,What is application-dev.properties?
+MEDIUM,What is the purpose of environment-specific configuration?
+MEDIUM,How does Spring Boot connect to a database?
+MEDIUM,What is a DataSource?
+MEDIUM,What is HikariCP?
+MEDIUM,What is the purpose of spring.datasource.url?
+MEDIUM,What does spring.jpa.hibernate.ddl-auto do?
+MEDIUM,What is the difference between ddl-auto create and update?
+MEDIUM,What is the difference between JPA and Hibernate?
+MEDIUM,What is EntityManager?
+MEDIUM,What is persistence context?
+MEDIUM,What is lazy loading?
+MEDIUM,What is eager loading?
+MEDIUM,What is @OneToMany?
+MEDIUM,What is @ManyToOne?
+MEDIUM,What is @OneToOne?
+MEDIUM,What is @ManyToMany?
+MEDIUM,What is @JoinColumn?
+MEDIUM,What is @Enumerated(EnumType.STRING)?
+MEDIUM,What is @Transactional?
+MEDIUM,Why is @Transactional used in Spring Boot?
+MEDIUM,What is transaction rollback?
+MEDIUM,What is derived query method in Spring Data JPA?
+MEDIUM,What is the difference between findById and getReferenceById?
+MEDIUM,What is Optional in Spring Data JPA?
+MEDIUM,What is sorting in Spring Data JPA?
+MEDIUM,What is ResponseEntity?
+MEDIUM,What is global exception handling?
+HARD,Explain the complete lifecycle of a Spring Boot application from startup to ready state.
+HARD,Explain how @SpringBootApplication combines multiple Spring annotations.
+HARD,Explain how Spring Boot auto-configuration works internally.
+HARD,How does Spring Boot use classpath dependencies to configure beans automatically?
+HARD,How can you debug why a Spring Boot auto-configuration was applied?
+HARD,What is the Spring Boot Condition Evaluation Report?
+HARD,How can auto-configuration be excluded from a Spring Boot application?
+HARD,What is the difference between @SpringBootApplication exclude and spring.autoconfigure.exclude?
+HARD,Explain the Spring bean lifecycle in detail.
+HARD,What happens during dependency injection and bean creation?
+HARD,What is BeanPostProcessor?
+HARD,What is BeanFactoryPostProcessor?
+HARD,What is the difference between BeanPostProcessor and BeanFactoryPostProcessor?
+HARD,What is the difference between @PostConstruct and @PreDestroy?
+HARD,How does Spring resolve circular dependencies?
+HARD,Why can constructor-based circular dependencies cause application startup failure?
+HARD,What is the difference between singleton bean scope and singleton design pattern?
+HARD,How does Spring create and manage proxies?
+HARD,What is Spring AOP?
+HARD,How does @Transactional work internally?
+HARD,Why can @Transactional fail when a method calls another method in the same class?
+HARD,What is transaction propagation in Spring?
+HARD,What are the common Spring transaction propagation types?
+HARD,What is transaction isolation?
+HARD,How do propagation and isolation differ?
+HARD,What is the difference between checked and unchecked exceptions with @Transactional rollback?
+HARD,How does Spring Data JPA generate repository implementations automatically?
+HARD,Explain how a derived query method is parsed by Spring Data JPA.
+HARD,What is the difference between JPQL and native SQL queries?
+HARD,What is @Query in Spring Data JPA?
+HARD,How does the persistence context interact with Hibernate's first-level cache?
+HARD,What is the N+1 query problem?
+HARD,How can the N+1 query problem be solved in Spring Data JPA?
+HARD,What is the difference between JOIN FETCH and EntityGraph?
+HARD,Explain lazy loading and LazyInitializationException.
+HARD,Why can returning JPA entities directly from REST controllers cause problems?
+HARD,How can DTO projections improve Spring Boot REST API performance?
+HARD,What is optimistic locking in JPA?
+HARD,What is pessimistic locking in JPA?
+HARD,What is @Version in JPA?
+HARD,How would you design pagination for a large Spring Boot REST API?
+HARD,How would you handle database connection pool exhaustion in Spring Boot?
+HARD,How would you investigate a slow Spring Boot API?
+HARD,How would you handle a transaction that spans multiple database operations?
+HARD,How does Spring Boot externalized configuration work across environments?
+HARD,How should secrets such as database passwords and API keys be managed in Spring Boot?
+HARD,What is the difference between application properties environment variables and command-line arguments in Spring Boot configuration?
+HARD,How does Spring Boot Actuator help monitor a production application?
+HARD,How would you implement validation and return meaningful validation errors in a Spring Boot REST API?
+HARD,How would you test a Spring Boot REST controller without starting the entire application?

@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is a data structure?
+EASY,What is an algorithm?
+EASY,What is the difference between a data structure and an algorithm?
+EASY,What is time complexity?
+EASY,What is space complexity?
+EASY,What is Big O notation?
+EASY,What is an array?
+EASY,What is the advantage of an array?
+EASY,What is the disadvantage of an array?
+EASY,What is a linked list?
+EASY,What is a node in a linked list?
+EASY,What is the difference between an array and a linked list?
+EASY,What is a singly linked list?
+EASY,What is a doubly linked list?
+EASY,What is a circular linked list?
+EASY,What is a stack?
+EASY,What is LIFO?
+EASY,What is a queue?
+EASY,What is FIFO?
+EASY,What is a circular queue?
+EASY,What is a deque?
+EASY,What is a priority queue?
+EASY,What is a hash table?
+EASY,What is hashing?
+EASY,What is a hash function?
+EASY,What is a collision in hashing?
+EASY,What is a tree?
+EASY,What is a binary tree?
+EASY,What is a binary search tree?
+EASY,What is a leaf node?
+EASY,What is the root node?
+EASY,What is the height of a tree?
+EASY,What is tree traversal?
+EASY,What is inorder traversal?
+EASY,What is preorder traversal?
+EASY,What is postorder traversal?
+EASY,What is level-order traversal?
+EASY,What is a graph?
+EASY,What is a vertex in a graph?
+EASY,What is an edge in a graph?
+EASY,What is a directed graph?
+EASY,What is an undirected graph?
+EASY,What is BFS?
+EASY,What is DFS?
+EASY,What is recursion?
+EASY,What is a base case in recursion?
+EASY,What is binary search?
+EASY,What is linear search?
+EASY,What is sorting?
+EASY,What is bubble sort?
+MEDIUM,How do you find the largest element in an array?
+MEDIUM,How do you find the second largest element in an array?
+MEDIUM,How do you reverse an array in place?
+MEDIUM,How do you remove duplicates from a sorted array?
+MEDIUM,How do you move all zeroes to the end of an array?
+MEDIUM,What is the two-pointer technique?
+MEDIUM,When should you use the two-pointer technique?
+MEDIUM,What is the sliding-window technique?
+MEDIUM,When should you use a sliding window?
+MEDIUM,What is a prefix sum?
+MEDIUM,How can prefix sums optimize range-sum queries?
+MEDIUM,What is Kadane's algorithm?
+MEDIUM,How does Kadane's algorithm find the maximum subarray sum?
+MEDIUM,What is the difference between subsequence and subarray?
+MEDIUM,How do you detect a cycle in a linked list?
+MEDIUM,What is Floyd's cycle detection algorithm?
+MEDIUM,How do you find the middle node of a linked list?
+MEDIUM,How do you reverse a linked list?
+MEDIUM,How do you merge two sorted linked lists?
+MEDIUM,How do you find the nth node from the end of a linked list?
+MEDIUM,How do you implement a stack using an array?
+MEDIUM,How do you implement a queue using an array?
+MEDIUM,How can a stack be used to check balanced parentheses?
+MEDIUM,What is a monotonic stack?
+MEDIUM,When is a monotonic stack useful?
+MEDIUM,How does a HashMap provide average O(1) lookup?
+MEDIUM,What happens when two keys produce the same hash value?
+MEDIUM,What is the difference between HashMap and HashSet?
+MEDIUM,What is a heap?
+MEDIUM,What is a min-heap?
+MEDIUM,What is a max-heap?
+MEDIUM,What is a priority queue?
+MEDIUM,How can a heap be used to find the kth largest element?
+MEDIUM,What is heap sort?
+MEDIUM,What is a balanced binary search tree?
+MEDIUM,What is the difference between a binary tree and a binary search tree?
+MEDIUM,How do you search for a value in a binary search tree?
+MEDIUM,How do you insert a value into a binary search tree?
+MEDIUM,What is the difference between BFS and DFS?
+MEDIUM,How can BFS find the shortest path in an unweighted graph?
+MEDIUM,How can DFS be used to detect a cycle?
+MEDIUM,What is an adjacency list?
+MEDIUM,What is an adjacency matrix?
+MEDIUM,What is the difference between adjacency list and adjacency matrix?
+MEDIUM,What is topological sorting?
+MEDIUM,When can topological sorting be applied?
+MEDIUM,What is the difference between merge sort and quicksort?
+MEDIUM,What is the average time complexity of quicksort?
+MEDIUM,What is the time complexity of merge sort?
+MEDIUM,What is dynamic programming?
+HARD,Explain how you identify the correct DSA pattern for a coding problem.
+HARD,How do you decide between brute force and an optimized solution?
+HARD,How do you analyze the time and space complexity of a recursive algorithm?
+HARD,How do you analyze the complexity of nested loops when their ranges depend on each other?
+HARD,How do you optimize an O(n^2) array solution?
+HARD,When should you use hashing instead of sorting?
+HARD,How would you solve the longest subarray with a given sum?
+HARD,How would you solve the longest substring without repeating characters?
+HARD,How would you solve a sliding-window problem when the window size is variable?
+HARD,How would you solve the minimum-window-substring problem?
+HARD,How would you solve the maximum subarray sum when the array contains negative values?
+HARD,How would you find the maximum product subarray?
+HARD,How would you find the intersection of two arrays efficiently?
+HARD,How would you find the first missing positive integer in O(n) time and O(1) extra space?
+HARD,How would you find duplicate numbers in an array without using extra space?
+HARD,How would you solve the trapping-rain-water problem?
+HARD,How would you solve the container-with-most-water problem?
+HARD,How would you solve the three-sum problem efficiently?
+HARD,How would you merge overlapping intervals?
+HARD,How would you find the meeting rooms required for a set of intervals?
+HARD,How would you detect a cycle in a linked list and find its starting node?
+HARD,How would you determine whether a linked list is a palindrome?
+HARD,How would you clone a linked list containing random pointers?
+HARD,How would you merge k sorted linked lists efficiently?
+HARD,How would you implement an LRU cache?
+HARD,Why is a HashMap combined with a doubly linked list useful for an LRU cache?
+HARD,How would you implement a stack that supports retrieving the minimum element in O(1)?
+HARD,How would you implement a queue using two stacks?
+HARD,How would you implement a stack using two queues?
+HARD,How would you evaluate an arithmetic expression using stacks?
+HARD,How would you find the next greater element for every array element?
+HARD,How would you solve the largest rectangle in a histogram problem?
+HARD,How would you find the kth largest element efficiently?
+HARD,How would you build a binary tree from preorder and inorder traversals?
+HARD,How would you serialize and deserialize a binary tree?
+HARD,How would you find the lowest common ancestor in a binary tree?
+HARD,How would you find the diameter of a binary tree?
+HARD,How would you determine whether a binary tree is balanced?
+HARD,How would you perform level-order traversal of a binary tree?
+HARD,How would you find the kth smallest element in a binary search tree?
+HARD,How would you validate whether a binary tree is a binary search tree?
+HARD,How would you find the lowest common ancestor in a binary search tree?
+HARD,How would you find the shortest path in an unweighted graph?
+HARD,How would you find the shortest path in a weighted graph with non-negative weights?
+HARD,Explain Dijkstra's algorithm and its time complexity.
+HARD,When can Dijkstra's algorithm not be used?
+HARD,Explain the Bellman-Ford algorithm.
+HARD,How does Bellman-Ford detect negative cycles?
+HARD,What is the difference between BFS Dijkstra and Bellman-Ford?
+HARD,How would you detect a cycle in a directed graph?

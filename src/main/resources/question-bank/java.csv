@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is Java?
+EASY,What are the main features of Java?
+EASY,Why is Java platform independent?
+EASY,What is the JVM?
+EASY,What is the JDK?
+EASY,What is the JRE?
+EASY,What is Java bytecode?
+EASY,What is the difference between JDK JRE and JVM?
+EASY,What is a class in Java?
+EASY,What is an object in Java?
+EASY,What is a method in Java?
+EASY,What is a constructor in Java?
+EASY,What is the difference between a class and an object?
+EASY,What are instance variables in Java?
+EASY,What are local variables in Java?
+EASY,What are static variables in Java?
+EASY,Why is the main method static?
+EASY,What is the purpose of the public keyword in Java?
+EASY,What is the purpose of the static keyword?
+EASY,What is the final keyword in Java?
+EASY,What is a package in Java?
+EASY,What is an import statement in Java?
+EASY,What are access modifiers in Java?
+EASY,What is the default access modifier in Java?
+EASY,What is public access in Java?
+EASY,What is private access in Java?
+EASY,What is protected access in Java?
+EASY,What is inheritance in Java?
+EASY,What is encapsulation in Java?
+EASY,What is polymorphism in Java?
+EASY,What is abstraction in Java?
+EASY,What is an interface in Java?
+EASY,What is an abstract class in Java?
+EASY,What is method overloading?
+EASY,What is method overriding?
+EASY,What is a superclass?
+EASY,What is a subclass?
+EASY,What is the super keyword?
+EASY,What is the this keyword?
+EASY,What is the difference between this and super?
+EASY,What is an array in Java?
+EASY,How do you create an array in Java?
+EASY,What is a String in Java?
+EASY,Why is String immutable in Java?
+EASY,What is String concatenation?
+EASY,What is the difference between String and StringBuilder?
+EASY,What is an exception in Java?
+EASY,What is exception handling?
+EASY,What are try and catch blocks?
+EASY,What is the purpose of the finally block?
+MEDIUM,What is the difference between == and equals() in Java?
+MEDIUM,What is the difference between equals() and hashCode()?
+MEDIUM,Why should hashCode() be overridden when equals() is overridden?
+MEDIUM,What is the difference between String StringBuilder and StringBuffer?
+MEDIUM,Why is String immutable in Java?
+MEDIUM,What is the String pool in Java?
+MEDIUM,What is the difference between stack and heap memory?
+MEDIUM,Where are objects stored in Java?
+MEDIUM,Where are local variables stored in Java?
+MEDIUM,What is garbage collection in Java?
+MEDIUM,How does garbage collection work at a high level?
+MEDIUM,Can we force garbage collection in Java?
+MEDIUM,What makes an object eligible for garbage collection?
+MEDIUM,What is the difference between checked and unchecked exceptions?
+MEDIUM,What is the difference between throw and throws?
+MEDIUM,What is the difference between final finally and finalize?
+MEDIUM,Can we have multiple catch blocks for one try block?
+MEDIUM,Can we have a try block without a catch block?
+MEDIUM,Can we have a try block without catch and finally?
+MEDIUM,What happens if an exception occurs in the finally block?
+MEDIUM,What is the difference between compile-time and runtime polymorphism?
+MEDIUM,How does method overloading work in Java?
+MEDIUM,How does method overriding work in Java?
+MEDIUM,Can a static method be overridden?
+MEDIUM,Can a private method be overridden?
+MEDIUM,Can a final method be overridden?
+MEDIUM,What is dynamic method dispatch?
+MEDIUM,What is upcasting in Java?
+MEDIUM,What is downcasting in Java?
+MEDIUM,What is the difference between an abstract class and an interface?
+MEDIUM,Can an abstract class have a constructor?
+MEDIUM,Can an interface have methods with implementations?
+MEDIUM,What are default methods in interfaces?
+MEDIUM,What are static methods in interfaces?
+MEDIUM,Can a Java class implement multiple interfaces?
+MEDIUM,Why does Java not support multiple inheritance using classes?
+MEDIUM,What is composition in Java?
+MEDIUM,What is the difference between inheritance and composition?
+MEDIUM,What is constructor chaining?
+MEDIUM,What is the difference between this() and super()?
+MEDIUM,Where must this() or super() appear inside a constructor?
+MEDIUM,What is the difference between shallow copy and deep copy?
+MEDIUM,What is object cloning in Java?
+MEDIUM,What is the Cloneable interface?
+MEDIUM,What is the difference between ArrayList and LinkedList?
+MEDIUM,What is the difference between ArrayList and array?
+MEDIUM,What is the difference between HashSet and ArrayList?
+MEDIUM,What is the difference between HashMap and HashSet?
+MEDIUM,How does HashMap store key-value pairs?
+MEDIUM,What happens when two keys have the same hash code?
+HARD,Explain the Java Memory Model and its role in thread synchronization.
+HARD,What is the happens-before relationship in Java?
+HARD,What is a race condition and how can it be prevented?
+HARD,What is a deadlock and how can it occur in Java?
+HARD,What are the necessary conditions for a deadlock?
+HARD,How can you prevent or detect deadlocks in Java?
+HARD,What is the difference between synchronized and volatile?
+HARD,What guarantees does the volatile keyword provide?
+HARD,Why does volatile not guarantee atomicity?
+HARD,What is the difference between synchronized methods and synchronized blocks?
+HARD,What is intrinsic locking in Java?
+HARD,What is reentrant synchronization?
+HARD,What is the difference between wait() notify() and notifyAll()?
+HARD,Why must wait() notify() and notifyAll() be called while holding the object's monitor?
+HARD,What is the difference between sleep() and wait()?
+HARD,What is the difference between Runnable and Callable?
+HARD,What is the ExecutorService framework?
+HARD,What is the difference between submit() and execute()?
+HARD,What is a Future in Java concurrency?
+HARD,What is CompletableFuture and why is it useful?
+HARD,What is the difference between synchronized collections and concurrent collections?
+HARD,How does ConcurrentHashMap provide thread safety?
+HARD,Why does ConcurrentHashMap not allow null keys and null values?
+HARD,What is the difference between AtomicInteger and synchronized access?
+HARD,What is CAS and how is it used in Java concurrency?
+HARD,What is the Java ForkJoinPool?
+HARD,What is work stealing in the ForkJoin framework?
+HARD,Explain the internal working of HashMap in Java.
+HARD,How does HashMap handle collisions?
+HARD,What happens when a HashMap bucket becomes highly populated?
+HARD,What is the purpose of treeification in HashMap?
+HARD,What is the load factor of HashMap?
+HARD,How does HashMap resizing work?
+HARD,What is the difference between HashMap and ConcurrentHashMap internally?
+HARD,Explain the internal working of HashSet.
+HARD,Why does HashSet use HashMap internally?
+HARD,What happens if a mutable object is used as a HashMap key?
+HARD,How does Java determine whether two HashMap keys are equal?
+HARD,Explain the difference between fail-fast and fail-safe iterators.
+HARD,How does ConcurrentModificationException occur?
+HARD,What is type erasure in Java generics?
+HARD,What are bounded wildcards in Java generics?
+HARD,Explain the difference between <? extends T> and <? super T>.
+HARD,What is the PECS principle in Java generics?
+HARD,What are bridge methods generated by the Java compiler?
+HARD,How does Java class loading work?
+HARD,What are the Bootstrap Platform and Application class loaders?
+HARD,What is parent delegation in Java class loading?
+HARD,What is the difference between ClassNotFoundException and NoClassDefFoundError?
+HARD,How does the Java garbage collector determine which objects are unreachable?

@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is cloud computing?
+EASY,Why is cloud computing used?
+EASY,What are the main benefits of cloud computing?
+EASY,What is AWS?
+EASY,What does AWS stand for?
+EASY,What is an AWS Region?
+EASY,What is an Availability Zone?
+EASY,What is an AWS data center?
+EASY,What is EC2?
+EASY,What is an EC2 instance?
+EASY,What is an AMI?
+EASY,What is an EC2 instance type?
+EASY,What is an EC2 security group?
+EASY,What is an Elastic IP?
+EASY,What is Amazon S3?
+EASY,What is an S3 bucket?
+EASY,What is an S3 object?
+EASY,What is an S3 bucket policy?
+EASY,What is Amazon RDS?
+EASY,What is a relational database in AWS?
+EASY,What is Amazon DynamoDB?
+EASY,What is AWS Lambda?
+EASY,What is serverless computing?
+EASY,What is Amazon VPC?
+EASY,What is a subnet?
+EASY,What is a public subnet?
+EASY,What is a private subnet?
+EASY,What is an Internet Gateway?
+EASY,What is a NAT Gateway?
+EASY,What is a route table?
+EASY,What is an AWS IAM user?
+EASY,What is an IAM role?
+EASY,What is an IAM policy?
+EASY,What is least-privilege access?
+EASY,What is Amazon CloudWatch?
+EASY,What is AWS CloudTrail?
+EASY,What is Elastic Load Balancing?
+EASY,What is an Application Load Balancer?
+EASY,What is Auto Scaling?
+EASY,What is Amazon Route 53?
+EASY,What is DNS?
+EASY,What is Amazon CloudFront?
+EASY,What is a CDN?
+EASY,What is Amazon ECR?
+EASY,What is Amazon ECS?
+EASY,What is Amazon EKS?
+EASY,What is AWS CodePipeline?
+EASY,What is AWS CodeBuild?
+EASY,What is AWS Secrets Manager?
+EASY,What are the Applications of AWS?
+MEDIUM,Explain the difference between IaaS PaaS and SaaS.
+MEDIUM,What is the difference between public private and hybrid cloud?
+MEDIUM,What is the difference between scalability and elasticity?
+MEDIUM,What is high availability in cloud computing?
+MEDIUM,What is fault tolerance in AWS?
+MEDIUM,How do AWS Regions and Availability Zones improve availability?
+MEDIUM,What is an EC2 launch template?
+MEDIUM,What is the difference between stopping and terminating an EC2 instance?
+MEDIUM,What is an EC2 key pair?
+MEDIUM,What is an EC2 security group and how does it work?
+MEDIUM,What is the difference between a security group and a network ACL?
+MEDIUM,What is an S3 storage class?
+MEDIUM,What is S3 versioning?
+MEDIUM,What is S3 lifecycle management?
+MEDIUM,What is S3 encryption?
+MEDIUM,What is the difference between S3 and EBS?
+MEDIUM,What is Amazon EBS?
+MEDIUM,What is an EBS snapshot?
+MEDIUM,What is the difference between EBS and EFS?
+MEDIUM,How does Amazon RDS simplify database management?
+MEDIUM,What is an RDS Multi-AZ deployment?
+MEDIUM,What are RDS read replicas?
+MEDIUM,What is the difference between Multi-AZ and read replicas?
+MEDIUM,What is a DynamoDB partition key?
+MEDIUM,What is a DynamoDB sort key?
+MEDIUM,What is a DynamoDB secondary index?
+MEDIUM,How does AWS Lambda work?
+MEDIUM,What is a Lambda trigger?
+MEDIUM,What is a Lambda execution role?
+MEDIUM,What are Lambda cold starts?
+MEDIUM,What is the difference between Lambda and EC2?
+MEDIUM,What is a VPC CIDR block?
+MEDIUM,How does a public subnet differ from a private subnet?
+MEDIUM,What does an Internet Gateway do?
+MEDIUM,Why is a NAT Gateway used?
+MEDIUM,How does a route table work in a VPC?
+MEDIUM,What is a bastion host?
+MEDIUM,What is IAM authentication?
+MEDIUM,What is the difference between an IAM user and IAM role?
+MEDIUM,How do IAM policies control access?
+MEDIUM,Why is the root AWS account not recommended for everyday tasks?
+MEDIUM,What is CloudWatch Logs?
+MEDIUM,What is a CloudWatch metric?
+MEDIUM,What is a CloudWatch alarm?
+MEDIUM,What does CloudTrail record?
+MEDIUM,What is an Application Load Balancer?
+MEDIUM,What is a Network Load Balancer?
+MEDIUM,What is an Auto Scaling Group?
+MEDIUM,How does Auto Scaling respond to changing traffic?
+MEDIUM,What is Route 53 routing?
+HARD,Design a highly available Spring Boot application on AWS.
+HARD,How would you deploy a Spring Boot application to EC2?
+HARD,How would you deploy a Dockerized Spring Boot application to AWS?
+HARD,How would you design an AWS architecture across multiple Availability Zones?
+HARD,How would you design a fault-tolerant application using EC2 Auto Scaling and a Load Balancer?
+HARD,How would you configure an Application Load Balancer for a Spring Boot application?
+HARD,How would you design an Auto Scaling Group for unpredictable traffic?
+HARD,How would you handle an EC2 instance failure automatically?
+HARD,How would you design a zero-downtime deployment on AWS?
+HARD,How would you implement blue-green deployment on AWS?
+HARD,How would you implement canary deployment on AWS?
+HARD,How would you deploy a Spring Boot application using AWS ECS?
+HARD,How would you deploy a containerized application using Amazon EKS?
+HARD,Compare EC2 ECS EKS and Lambda for running backend applications.
+HARD,When would you choose Lambda instead of EC2?
+HARD,How would you design a serverless REST API using API Gateway and Lambda?
+HARD,How would you handle Lambda cold-start latency?
+HARD,How would you securely connect Lambda to an RDS database?
+HARD,What problems can occur when Lambda functions open too many database connections?
+HARD,How would you design database connectivity for high-concurrency Lambda functions?
+HARD,How would you design an RDS database for high availability?
+HARD,How would you choose between RDS Multi-AZ and read replicas?
+HARD,How would you scale an RDS database when read traffic becomes very high?
+HARD,How would you migrate a MySQL database from a local server to Amazon RDS?
+HARD,How would you secure an RDS database so it cannot be accessed directly from the Internet?
+HARD,How would you design an S3 architecture for storing millions of uploaded files?
+HARD,How would you securely allow users to upload files directly to S3?
+HARD,What are S3 presigned URLs and when would you use them?
+HARD,How would you protect sensitive files stored in S3?
+HARD,How would you reduce S3 storage costs using lifecycle policies?
+HARD,How would you design a VPC for a production application?
+HARD,Explain the traffic flow from an Internet user through an ALB to a private EC2 instance.
+HARD,How would you design public and private subnets for a three-tier application?
+HARD,How would you allow private EC2 instances to access the Internet securely?
+HARD,What happens if a NAT Gateway fails?
+HARD,How would you design VPC high availability across Availability Zones?
+HARD,How would you troubleshoot an EC2 instance that cannot access the Internet?
+HARD,How would you troubleshoot an application that cannot connect to an RDS database?
+HARD,How would you securely manage AWS credentials for a production application?
+HARD,How would you implement least-privilege IAM permissions for a Spring Boot application?
+HARD,How would you investigate an unexpected AWS resource change using CloudTrail?
+HARD,How would you monitor a production application using CloudWatch?
+HARD,How would you create alarms for high CPU usage and application errors?
+HARD,How would you design centralized logging for multiple EC2 instances?
+HARD,How would you use CloudFront with S3 to serve a React application?
+HARD,How would you host a Vite React frontend on AWS?
+HARD,How would you configure Route 53 to point a domain to your application?
+HARD,How would you secure an AWS application using HTTPS and ACM?
+HARD,How would you design a complete AWS architecture for your AI interview platform?
+HARD,What is CloudFront caching?

@@ -1,0 +1,151 @@
+difficulty,questionText
+EASY,What is backend development?
+EASY,What is a backend server?
+EASY,What is a client?
+EASY,What is a server?
+EASY,What is a client-server architecture?
+EASY,What is an API?
+EASY,What is a REST API?
+EASY,What is HTTP?
+EASY,What is HTTPS?
+EASY,What is a URL?
+EASY,What is an endpoint?
+EASY,What is an HTTP request?
+EASY,What is an HTTP response?
+EASY,What is an HTTP method?
+EASY,What is GET?
+EASY,What is POST?
+EASY,What is PUT?
+EASY,What is PATCH?
+EASY,What is DELETE?
+EASY,What is an HTTP status code?
+EASY,What does status code 200 mean?
+EASY,What does status code 201 mean?
+EASY,What does status code 400 mean?
+EASY,What does status code 401 mean?
+EASY,What does status code 403 mean?
+EASY,What does status code 404 mean?
+EASY,What does status code 500 mean?
+EASY,What is JSON?
+EASY,What is XML?
+EASY,What is a database?
+EASY,Why do backend applications use databases?
+EASY,What is SQL?
+EASY,What is a relational database?
+EASY,What is a table in a database?
+EASY,What is a primary key?
+EASY,What is a foreign key?
+EASY,What is CRUD?
+EASY,What does authentication mean?
+EASY,What does authorization mean?
+EASY,What is a session?
+EASY,What is a cookie?
+EASY,What is a token?
+EASY,What is JWT?
+EASY,What is middleware?
+EASY,What is input validation?
+EASY,Why is input validation important?
+EASY,What is an exception in a backend application?
+EASY,What is logging?
+EASY,Why is error handling important in backend development?
+EASY,What is CORS?
+MEDIUM,Explain the difference between authentication and authorization.
+MEDIUM,How does a REST API work?
+MEDIUM,What happens when a browser sends a request to a backend server?
+MEDIUM,What is the difference between PUT and PATCH?
+MEDIUM,What is the difference between POST and PUT?
+MEDIUM,What is idempotency in REST APIs?
+MEDIUM,Which HTTP methods are generally idempotent?
+MEDIUM,What is statelessness in REST?
+MEDIUM,Why are REST APIs generally designed to be stateless?
+MEDIUM,What is content negotiation?
+MEDIUM,What are HTTP request headers?
+MEDIUM,What are HTTP response headers?
+MEDIUM,What is the Content-Type header?
+MEDIUM,What is the Authorization header?
+MEDIUM,What is Bearer authentication?
+MEDIUM,What is API versioning?
+MEDIUM,Why is API versioning important?
+MEDIUM,What are common API versioning approaches?
+MEDIUM,What is pagination?
+MEDIUM,Why is pagination important for APIs?
+MEDIUM,What is sorting in an API?
+MEDIUM,What is filtering in an API?
+MEDIUM,What is searching in an API?
+MEDIUM,What is rate limiting?
+MEDIUM,Why do APIs use rate limiting?
+MEDIUM,What is caching in backend development?
+MEDIUM,What is a cache hit?
+MEDIUM,What is a cache miss?
+MEDIUM,What is database connection pooling?
+MEDIUM,Why is connection pooling useful?
+MEDIUM,What is a database transaction?
+MEDIUM,What are ACID properties?
+MEDIUM,What is database indexing?
+MEDIUM,Why do indexes improve database queries?
+MEDIUM,What is a database query?
+MEDIUM,What is an ORM?
+MEDIUM,Why do backend applications use ORM frameworks?
+MEDIUM,What is the N+1 query problem?
+MEDIUM,What is lazy loading?
+MEDIUM,What is eager loading?
+MEDIUM,What is a DTO?
+MEDIUM,Why should APIs sometimes return DTOs instead of database entities?
+MEDIUM,What is serialization?
+MEDIUM,What is deserialization?
+MEDIUM,What is dependency injection?
+MEDIUM,What is a service layer?
+MEDIUM,What is a repository or data-access layer?
+MEDIUM,What is a layered architecture?
+MEDIUM,What is centralized exception handling?
+MEDIUM,What is API rate limiting versus throttling?
+HARD,Design a scalable backend architecture for an application with millions of users.
+HARD,Explain the complete lifecycle of an HTTP request through a backend system.
+HARD,How would you design a REST API for a large production application?
+HARD,How would you design authentication and authorization for a production backend?
+HARD,How does JWT-based authentication work from login to authenticated API requests?
+HARD,What are the security risks of storing JWTs in browser localStorage?
+HARD,How would you implement refresh tokens securely?
+HARD,How would you revoke a JWT before its expiration?
+HARD,What is the difference between session-based authentication and JWT authentication?
+HARD,When would you choose session-based authentication over JWT?
+HARD,How would you protect an API against brute-force login attacks?
+HARD,How would you protect an API against SQL injection?
+HARD,How would you protect an API against cross-site scripting?
+HARD,How does CORS work internally?
+HARD,What is CSRF and how can backend applications protect against it?
+HARD,What is the difference between CORS and CSRF?
+HARD,How would you implement role-based access control in a backend?
+HARD,How would you design API rate limiting for a high-traffic application?
+HARD,What is the difference between rate limiting and throttling?
+HARD,How would you prevent duplicate requests from creating duplicate records?
+HARD,What is an idempotency key and when should it be used?
+HARD,How would you design an idempotent payment API?
+HARD,How would you handle concurrent updates to the same database record?
+HARD,What is optimistic locking and when should it be used?
+HARD,What is pessimistic locking and when should it be used?
+HARD,How would you solve a database connection pool exhaustion problem?
+HARD,How would you investigate a slow backend API?
+HARD,How would you identify whether an API bottleneck is caused by the application or database?
+HARD,How would you optimize a slow database query?
+HARD,How would you decide which database columns should have indexes?
+HARD,What problems can excessive database indexes cause?
+HARD,How would you handle millions of records in an API without loading them all into memory?
+HARD,How would you implement cursor-based pagination?
+HARD,What is the difference between offset pagination and cursor pagination?
+HARD,How would you design caching for a frequently requested API?
+HARD,What is cache invalidation and why is it difficult?
+HARD,What caching strategies can be used in backend applications?
+HARD,What is cache-aside?
+HARD,How would you prevent a cache stampede?
+HARD,What happens when a Redis server becomes unavailable?
+HARD,How would you make a backend resilient when a dependent service is unavailable?
+HARD,What are timeouts retries and circuit breakers?
+HARD,Why can blindly retrying failed requests make a system worse?
+HARD,What is the circuit breaker pattern?
+HARD,How would you handle asynchronous processing in a backend?
+HARD,What is a message queue?
+HARD,What are Kafka and RabbitMQ commonly used for?
+HARD,When would you choose synchronous communication versus asynchronous communication?
+HARD,How would you design centralized logging for multiple backend services?
+HARD,How would you monitor and troubleshoot a production backend?
