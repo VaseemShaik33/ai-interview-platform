@@ -32,32 +32,29 @@ public class JwtService {
                 .compact();
     }
 
-public boolean validateToken(String token ){
-    
-   try{
-    Jwts.parser()
-    .verifyWith(
-        Keys.hmacShaKeyFor(
-            secretKey.getBytes(StandardCharsets.UTF_8)
-        )
-    )
-    .build()
-    .parseSignedClaims(token);
-    return true;
-   }catch(Exception e){
-    return false;
-   }
+    public boolean validateToken(String token) {
 
-}
+        try {
+            Jwts.parser()
+                    .verifyWith(
+                            Keys.hmacShaKeyFor(
+                                    secretKey.getBytes(StandardCharsets.UTF_8)))
+                    .build()
+                    .parseSignedClaims(token);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
 
-public String extractEmail(String token){
-  return Jwts.parser()
-   .verifyWith(
-    Keys.hmacShaKeyFor(
-        secretKey.getBytes(StandardCharsets.UTF_8)
-    )
-).build()
-.parseSignedClaims(token)
-.getPayload().get("email", String.class);
-}
+    }
+
+    public String extractEmail(String token) {
+        return Jwts.parser()
+                .verifyWith(
+                        Keys.hmacShaKeyFor(
+                                secretKey.getBytes(StandardCharsets.UTF_8)))
+                .build()
+                .parseSignedClaims(token)
+                .getPayload().get("email", String.class);
+    }
 }

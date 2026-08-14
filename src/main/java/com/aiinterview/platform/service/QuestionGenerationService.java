@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class QuestionGenerationService {
     private final InterviewCategoryService interviewCategoryService;
 
-    public QuestionGenerationService(InterviewCategoryService interviewCategoryService){
-        this.interviewCategoryService=interviewCategoryService;
+    public QuestionGenerationService(InterviewCategoryService interviewCategoryService) {
+        this.interviewCategoryService = interviewCategoryService;
     }
 }

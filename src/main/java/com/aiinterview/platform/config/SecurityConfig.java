@@ -13,8 +13,9 @@ import com.aiinterview.platform.security.JwtAuthenticationFilter;
 @Configuration
 public class SecurityConfig {
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
-    public SecurityConfig(JwtAuthenticationFilter jwtAuthenticationFilter){
-        this.jwtAuthenticationFilter=jwtAuthenticationFilter;
+
+    public SecurityConfig(JwtAuthenticationFilter jwtAuthenticationFilter) {
+        this.jwtAuthenticationFilter = jwtAuthenticationFilter;
     }
 
     @Bean
@@ -28,10 +29,12 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth.requestMatchers("/api/auth/register", "/api/auth/login")
                         .permitAll()
                         .requestMatchers("/api/categories").permitAll()
+                        .requestMatchers("/api/interviews/**").permitAll()
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
-                        .requestMatchers("/api/interviewer/**").hasAnyRole("ADMIN","INTERVIEWER")
+                        .requestMatchers("/api/interviewer/**").hasAnyRole("ADMIN", "INTERVIEWER")
                         .requestMatchers("/api/candidate/**").hasRole("CANDIDATE")
-                        .anyRequest().authenticated()).addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+                        .anyRequest().authenticated())
+                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
 

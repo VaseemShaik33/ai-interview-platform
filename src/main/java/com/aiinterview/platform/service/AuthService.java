@@ -23,10 +23,10 @@ public class AuthService {
 
     private final JwtService jwtService;
 
-    public AuthService(UserRepository userRepository, PasswordEncoder passwordEncoder,JwtService jwtService) {
+    public AuthService(UserRepository userRepository, PasswordEncoder passwordEncoder, JwtService jwtService) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
-        this.jwtService=jwtService;
+        this.jwtService = jwtService;
     }
 
     public RegisterResponse register(RegisterRequest request) {
@@ -45,16 +45,14 @@ public class AuthService {
         return new RegisterResponse("Registration Successful", savedUser.getId(), savedUser.getEmail());
     }
 
-    public LoginResponse login(LoginRequest request){
-       User user=userRepository.findByEmail(request.email())
-                .orElseThrow(()->
-                              new InvalidCredentialsException("Invalid email or password"));
+    public LoginResponse login(LoginRequest request) {
+        User user = userRepository.findByEmail(request.email())
+                .orElseThrow(() -> new InvalidCredentialsException("Invalid email or password"));
 
-
-        if(!passwordEncoder.matches(request.password(),user.getPassword())){
-              throw new InvalidCredentialsException("Invalid email or password");
+        if (!passwordEncoder.matches(request.password(), user.getPassword())) {
+            throw new InvalidCredentialsException("Invalid email or password");
         }
-        String token=jwtService.generateToken(user);
-        return new LoginResponse("Login Successful",user.getId(),token);
+        String token = jwtService.generateToken(user);
+        return new LoginResponse("Login Successful", user.getId(), token);
     }
 }
