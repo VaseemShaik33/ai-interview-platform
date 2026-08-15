@@ -6,19 +6,32 @@ import jakarta.persistence.*;
 
 @Entity
 public class InterviewAnswer {
-    
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name="session_id")
+    @JoinColumn(name = "session_id")
     private InterviewSession session;
 
     @ManyToOne
-    @JoinColumn(name="question_id")
+    @JoinColumn(name = "question_id")
     private Question question;
+
+    private Long score;
+
+    @Column(columnDefinition = "TEXT")
+    private String feedback;
+
+    @Column(columnDefinition = "TEXT")
+    private String userAnswer;
+
+    @Enumerated(EnumType.STRING)
+    private Correctness correctness;
+
+    @Column(name = "answered_at")
+    private LocalDateTime answeredAt;
 
     public Long getId() {
         return id;
@@ -84,14 +97,4 @@ public class InterviewAnswer {
         this.answeredAt = answeredAt;
     }
 
-    private String userAnswer;
-
-    private Long score;
-
-    private String feedback;
-
-    @Enumerated(EnumType.STRING)
-    private Correctness correctness;
-
-    private LocalDateTime answeredAt;
 }
