@@ -5,24 +5,24 @@ import java.time.LocalDateTime;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="interview_sessions")
+@Table(name = "interview_sessions")
 public class InterviewSession {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="user_id")
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="category_id")
+    @JoinColumn(name = "category_id")
     private InterviewCategory category;
-     
+
     @Enumerated(EnumType.STRING)
     private Difficulty difficulty;
 
-     @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING)
     private InterviewStatus status;
 
     private int totalQuestions;
@@ -96,5 +96,13 @@ public class InterviewSession {
     }
 
     private LocalDateTime completedAt;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
 }

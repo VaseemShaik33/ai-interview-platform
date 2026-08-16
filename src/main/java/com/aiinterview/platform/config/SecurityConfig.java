@@ -12,9 +12,12 @@ import com.aiinterview.platform.security.JwtAuthenticationFilter;
 
 @Configuration
 public class SecurityConfig {
+
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
 
-    public SecurityConfig(JwtAuthenticationFilter jwtAuthenticationFilter) {
+    public SecurityConfig(
+            JwtAuthenticationFilter jwtAuthenticationFilter) {
+
         this.jwtAuthenticationFilter = jwtAuthenticationFilter;
     }
 
@@ -24,20 +27,48 @@ public class SecurityConfig {
     }
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) {
-        http.csrf(csrf -> csrf.disable())
-                .authorizeHttpRequests(auth -> auth.requestMatchers("/api/auth/register", "/api/auth/login")
+    public SecurityFilterChain securityFilterChain(
+            HttpSecurity http) {
+
+        http
+                .csrf(csrf -> csrf.disable())
+
+                .authorizeHttpRequests(auth -> auth
+
+                        // Authentication APIs
+                        .requestMatchers(
+                                "/api/auth/register",
+                                "/api/auth/login",
+                                "/api/auth/refresh",
+                                "/api/auth/logout")
                         .permitAll()
-                        .requestMatchers("/api/categories").permitAll()
-                        .requestMatchers("/api/interviews/**").permitAll()
-                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
-                        .requestMatchers("/api/interviewer/**").hasAnyRole("ADMIN", "INTERVIEWER")
-                        .requestMatchers("/api/candidate/**").hasRole("CANDIDATE")
-                        .anyRequest().authenticated())
-                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+
+                        .requestMatchers("/api/categories")
+                        .permitAll()
+
+                        // Interview APIs require JWT
+                        .requestMatchers("/api/interviews/**")
+                        .authenticated()
+
+                        // Admin
+                        .requestMatchers("/api/admin/**")
+                        .hasRole("ADMIN")
+
+                        // Interviewer
+                        .requestMatchers("/api/interviewer/**")
+                        .hasAnyRole("ADMIN", "INTERVIEWER")
+
+                        // Candidate
+                        .requestMatchers("/api/candidate/**")
+                        .hasRole("CANDIDATE")
+
+                        .anyRequest()
+                        .authenticated())
+
+                .addFilterBefore(
+                        jwtAuthenticationFilter,
+                        UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
-
     }
-
 }

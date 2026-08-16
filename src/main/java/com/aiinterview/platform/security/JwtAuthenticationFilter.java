@@ -26,31 +26,53 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final UserRepository userRepository;
 
-    public JwtAuthenticationFilter(JwtService jwtService,UserRepository userRepository){
-        this.jwtService=jwtService;
-        this.userRepository=userRepository;
+    public JwtAuthenticationFilter(
+            JwtService jwtService,
+            UserRepository userRepository) {
+
+        this.jwtService = jwtService;
+        this.userRepository = userRepository;
     }
 
     @Override
-    public void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+    protected void doFilterInternal(
+            HttpServletRequest request,
+            HttpServletResponse response,
+            FilterChain filterChain)
             throws ServletException, IOException {
-      
+
         String authHeader = request.getHeader("Authorization");
-        if (authHeader != null && authHeader.startsWith("Bearer ")) {
+
+        if (authHeader != null
+                && authHeader.startsWith("Bearer ")) {
+
             String token = authHeader.substring(7);
 
-            if(!jwtService.validateToken(token)){
+            if (!jwtService.validateToken(token)) {
+
+                filterChain.doFilter(request, response);
                 return;
             }
-            String email=jwtService.extractEmail(token);
-             User user=userRepository.findByEmail(email)
-             .orElseThrow(() -> new InvalidCredentialsException("User not found"));
-                SimpleGrantedAuthority authority=new SimpleGrantedAuthority("ROLE_"+user.getRole());
-                UsernamePasswordAuthenticationToken authentication=new UsernamePasswordAuthenticationToken(user, null, List.of(authority));
-               
-                SecurityContextHolder.getContext().setAuthentication(authentication);
 
+            String email = jwtService.extractEmail(token);
+
+            User user = userRepository.findByEmail(email)
+                    .orElseThrow(() -> new InvalidCredentialsException(
+                            "User not found"));
+
+            SimpleGrantedAuthority authority = new SimpleGrantedAuthority(
+                    "ROLE_" + user.getRole());
+
+            UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(
+                    user,
+                    null,
+                    List.of(authority));
+
+            SecurityContextHolder
+                    .getContext()
+                    .setAuthentication(authentication);
         }
-          filterChain.doFilter(request, response);
+
+        filterChain.doFilter(request, response);
     }
 }

@@ -7,6 +7,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.aiinterview.platform.dto.GeminiEvaluationResponse;
+import com.aiinterview.platform.dto.InterviewHistoryResponse;
 import com.aiinterview.platform.dto.InterviewResultResponse;
 import com.aiinterview.platform.dto.QuestionResponse;
 import com.aiinterview.platform.dto.StartInterviewRequest;
@@ -20,6 +21,7 @@ import com.aiinterview.platform.entity.InterviewSession;
 import com.aiinterview.platform.entity.InterviewSessionQuestion;
 import com.aiinterview.platform.entity.InterviewStatus;
 import com.aiinterview.platform.entity.Question;
+import com.aiinterview.platform.entity.User;
 import com.aiinterview.platform.repository.InterviewAnswerRepository;
 import com.aiinterview.platform.repository.InterviewCategoryRepository;
 import com.aiinterview.platform.repository.InterviewSessionQuestionRepository;
@@ -53,8 +55,7 @@ public class InterviewSessionService {
                 this.geminiEvaluationService = geminiEvaluationService;
         }
 
-        public StartInterviewResponse startInterview(StartInterviewRequest request) {
-                System.out.println("START INTERVIEW CALLED");
+        public StartInterviewResponse startInterview(StartInterviewRequest request, User user) {
                 // 1. Validate number of questions
                 if (request.numberOfQuestions() != 5 &&
                                 request.numberOfQuestions() != 10 &&
@@ -87,6 +88,7 @@ public class InterviewSessionService {
                 // 7. Create InterviewSession
                 InterviewSession session = new InterviewSession();
 
+                session.setUser(user);
                 session.setCategory(category);
                 session.setDifficulty(request.difficulty());
                 session.setTotalQuestions(request.numberOfQuestions());
@@ -171,7 +173,7 @@ public class InterviewSessionService {
                 if (currentQuestionNumber == session.getTotalQuestions()) {
 
                         session.setStatus(InterviewStatus.COMPLETED);
-
+                        session.setCompletedAt(LocalDateTime.now());
                         interviewSessionRepository.save(session);
 
                         return new SubmitAnswerResponse(
@@ -214,35 +216,72 @@ public class InterviewSessionService {
 
         public InterviewResultResponse getResult(Long sessionId) {
 
-    InterviewSession session = interviewSessionRepository
-            .findById(sessionId)
-            .orElseThrow(() ->
-                    new RuntimeException("Interview session not found"));
+                InterviewSession session = interviewSessionRepository
+                                .findById(sessionId)
+                                .orElseThrow(() -> new RuntimeException("Interview session not found"));
 
-    List<InterviewAnswer> answers =
-            interviewAnswerRepository.findBySessionId(sessionId);
+                List<InterviewAnswer> answers = interviewAnswerRepository.findBySessionId(sessionId);
 
-    long totalScore = answers.stream()
-            .mapToLong(InterviewAnswer::getScore)
-            .sum();
+                long totalScore = answers.stream()
+                                .mapToLong(InterviewAnswer::getScore)
+                                .sum();
 
-    int answeredQuestions = answers.size();
+                int answeredQuestions = answers.size();
 
-    long maximumScore = session.getTotalQuestions() * 10L;
+                long maximumScore = session.getTotalQuestions() * 10L;
 
-    double percentage = maximumScore == 0
-            ? 0
-            : (totalScore * 100.0) / maximumScore;
+                double percentage = maximumScore == 0
+                                ? 0
+                                : (totalScore * 100.0) / maximumScore;
 
-    return new InterviewResultResponse(
-            session.getId(),
-            session.getCategory().getName(),
-            session.getTotalQuestions(),
-            answeredQuestions,
-            totalScore,
-            maximumScore,
-            percentage,
-            session.getStatus()
-    );
-}
+                return new InterviewResultResponse(
+                                session.getId(),
+                                session.getCategory().getName(),
+                                session.getTotalQuestions(),
+                                answeredQuestions,
+                                totalScore,
+                                maximumScore,
+                                percentage,
+                                session.getStatus());
+        }
+
+        public List<InterviewHistoryResponse> getInterviewHistory(Long userId) {
+
+                List<InterviewSession> sessions = interviewSessionRepository
+                                .findByUserIdOrderByStartedAtDesc(userId);
+
+                return sessions.stream()
+                                .map(session -> {
+
+                                        List<InterviewAnswer> answers = interviewAnswerRepository
+                                                        .findBySessionId(session.getId());
+
+                                        long totalScore = answers.stream()
+                                                        .mapToLong(InterviewAnswer::getScore)
+                                                        .sum();
+
+                                        int answeredQuestions = answers.size();
+
+                                        long maximumScore = session.getTotalQuestions() * 10L;
+
+                                        double percentage = maximumScore == 0
+                                                        ? 0
+                                                        : (totalScore * 100.0)
+                                                                        / maximumScore;
+
+                                        return new InterviewHistoryResponse(
+                                                        session.getId(),
+                                                        session.getCategory().getName(),
+                                                        session.getDifficulty().name(),
+                                                        session.getTotalQuestions(),
+                                                        answeredQuestions,
+                                                        totalScore,
+                                                        maximumScore,
+                                                        percentage,
+                                                        session.getStatus(),
+                                                        session.getStartedAt(),
+                                                        session.getCompletedAt());
+                                })
+                                .toList();
+        }
 }

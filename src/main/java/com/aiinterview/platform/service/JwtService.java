@@ -17,9 +17,11 @@ public class JwtService {
     @Value("${jwt.secret}")
     private String secretKey;
 
-    public String generateToken(User user) {
+    public String generateAccessToken(User user) {
 
-        Date expirationDate = new Date(System.currentTimeMillis() + 24 * 60 * 60 * 1000);
+        // Access token expires after 15 minutes
+        Date expirationDate = new Date(System.currentTimeMillis()
+                + 15 * 60 * 1000);
 
         return Jwts.builder()
                 .claim("userId", user.getId())
@@ -35,26 +37,31 @@ public class JwtService {
     public boolean validateToken(String token) {
 
         try {
+
             Jwts.parser()
                     .verifyWith(
                             Keys.hmacShaKeyFor(
                                     secretKey.getBytes(StandardCharsets.UTF_8)))
                     .build()
                     .parseSignedClaims(token);
+
             return true;
+
         } catch (Exception e) {
+
             return false;
         }
-
     }
 
     public String extractEmail(String token) {
+
         return Jwts.parser()
                 .verifyWith(
                         Keys.hmacShaKeyFor(
                                 secretKey.getBytes(StandardCharsets.UTF_8)))
                 .build()
                 .parseSignedClaims(token)
-                .getPayload().get("email", String.class);
+                .getPayload()
+                .get("email", String.class);
     }
 }

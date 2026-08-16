@@ -1,11 +1,7 @@
 package com.aiinterview.platform.dto;
 
-public record LoginResponse(
-        String message,
-        Long userId,
+public record RefreshTokenResponse(
         String accessToken,
         String refreshToken
-
 ) {
-
 }
