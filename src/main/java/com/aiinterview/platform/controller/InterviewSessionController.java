@@ -36,8 +36,6 @@ public class InterviewSessionController {
             @RequestBody StartInterviewRequest request,
             Authentication authentication) {
 
-        System.out.println("CONTROLLER CALLED");
-
         User user = (User) authentication.getPrincipal();
 
         return interviewSessionService.startInterview(request, user);
@@ -46,16 +44,27 @@ public class InterviewSessionController {
     @PostMapping("/{sessionId}/answer")
     public SubmitAnswerResponse submitAnswer(
             @PathVariable Long sessionId,
-            @Valid @RequestBody SubmitAnswerRequest request) {
+            @Valid @RequestBody SubmitAnswerRequest request,
+            Authentication authentication) {
+
+        User user = (User) authentication.getPrincipal();
 
         return interviewSessionService.submitAnswer(
                 sessionId,
-                request);
+                request,
+                user);
     }
 
     @GetMapping("/{sessionId}/result")
-    public InterviewResultResponse getResult(@PathVariable Long sessionId) {
-        return interviewSessionService.getResult(sessionId);
+    public InterviewResultResponse getResult(
+            @PathVariable Long sessionId,
+            Authentication authentication) {
+
+        User user = (User) authentication.getPrincipal();
+
+        return interviewSessionService.getResult(
+                sessionId,
+                user);
     }
 
     @GetMapping("/history")

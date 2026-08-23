@@ -22,6 +22,7 @@ import com.aiinterview.platform.entity.InterviewSessionQuestion;
 import com.aiinterview.platform.entity.InterviewStatus;
 import com.aiinterview.platform.entity.Question;
 import com.aiinterview.platform.entity.User;
+import com.aiinterview.platform.exception.AccessDeniedException;
 import com.aiinterview.platform.repository.InterviewAnswerRepository;
 import com.aiinterview.platform.repository.InterviewCategoryRepository;
 import com.aiinterview.platform.repository.InterviewSessionQuestionRepository;
@@ -134,11 +135,14 @@ public class InterviewSessionService {
 
         public SubmitAnswerResponse submitAnswer(
                         Long sessionId,
-                        SubmitAnswerRequest request) {
+                        SubmitAnswerRequest request,
+                        User user) {
 
                 // 1. Find interview session
                 InterviewSession session = interviewSessionRepository.findById(sessionId)
                                 .orElseThrow(() -> new RuntimeException("Interview session not found"));
+
+                verifySessionOwner(session, user);
 
                 // 2. Get current question number
                 int currentQuestionNumber = session.getCurrentQuestionNumber();
@@ -214,11 +218,14 @@ public class InterviewSessionService {
                                 questionResponse);
         }
 
-        public InterviewResultResponse getResult(Long sessionId) {
+        public InterviewResultResponse getResult(
+                        Long sessionId,
+                        User user) {
 
-                InterviewSession session = interviewSessionRepository
-                                .findById(sessionId)
+                InterviewSession session = interviewSessionRepository.findById(sessionId)
                                 .orElseThrow(() -> new RuntimeException("Interview session not found"));
+
+                verifySessionOwner(session, user);
 
                 List<InterviewAnswer> answers = interviewAnswerRepository.findBySessionId(sessionId);
 
@@ -283,5 +290,15 @@ public class InterviewSessionService {
                                                         session.getCompletedAt());
                                 })
                                 .toList();
+        }
+
+        private void verifySessionOwner(InterviewSession session, User user) {
+
+                if (session.getUser() == null ||
+                                !session.getUser().getId().equals(user.getId())) {
+
+                        throw new AccessDeniedException(
+                                        "You do not have access to this interview");
+                }
         }
 }
